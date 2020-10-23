@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bafb02329c6649f1864ee4c2ca03206b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_bafb02329c6649f1864ee4c2ca03206b" ></div>
+        
+</body>
+<script>    
+    
+            var map_bafb02329c6649f1864ee4c2ca03206b = L.map(
+                "map_bafb02329c6649f1864ee4c2ca03206b",
+                {
+                    center: [34.643052, 135.497466],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_40c12a61584f4f8bacabd59c8c4251b1 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            var marker_650d1b01768045e6b8439e1a1db55420 = L.marker(
+                [34.65197, 135.489],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_650d1b01768045e6b8439e1a1db55420.bindTooltip(
+                `<div>
+                     にしなり☆こども食堂       日程 ：月曜日17:30 ~ /火曜日17:30 ~/土曜日12:00 ~　参加費 ：無料 TEL: 06-7709-5432<br/>〒557-0022 大阪府大阪市西成区中開３丁目３?１ 大阪市営ひらき住宅 1 102　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6fcf4dada6a4bd19da7b8e8e370a911 = L.marker(
+                [34.719537, 135.484607],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_d6fcf4dada6a4bd19da7b8e8e370a911.bindTooltip(
+                `<div>
+                     十三こども０円食堂       日程: 毎月第1土曜15:00 参加費: 無料  TEL: 090-8376-0982（代表）<br/>〒532-0023 大阪府大阪市淀川区十三東１丁目１７?１３ 水交ビル 1F 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f15e2b7a1a404aec82cc92358ccc6c51 = L.marker(
+                [34.623882, 135.495275],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_f15e2b7a1a404aec82cc92358ccc6c51.bindTooltip(
+                `<div>
+                     こどもの居場所まーる       日程：毎週金曜日15:30~19:00 TEL: 090-3622-2889<br/>〒557-0043 大阪府大阪市西成区玉出東２丁目９?３３　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a943be929b1405e94141f9139928b1f = L.marker(
+                [34.643052000000004, 135.497466],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_8a943be929b1405e94141f9139928b1f.bindTooltip(
+                `<div>
+                     Tおむすび食堂       日程: 毎月第二火曜日16:30~19:00　参加費:こども無料 大人(ワンコイン）TEL:<br/>〒557-0015 大阪市西成区花園南一丁目1-8-15 山口ビル2階　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c242b2384634df6bc6fc1fe10e77298 = L.marker(
+                [34.640364, 135.49753],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_0c242b2384634df6bc6fc1fe10e77298.bindTooltip(
+                `<div>
+                     すまいる食堂       日程: 第1・3水曜日 18:00～20:00　参加費: 小学生未満：無料 / 小・中学生：100円　大人：200円(同伴者に限る)　TEL: 06-6659-8181<br/>〒557-0014 大阪市西成区天下茶屋 1-32-19　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64d57a7ece3c472da931d53fdc956096 = L.marker(
+                [34.630156, 135.49687],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_64d57a7ece3c472da931d53fdc956096.bindTooltip(
+                `<div>
+                     まん中広場       日程: 毎週土曜日16:00~18:00　参加費: 子供無料 大人300円<br/>〒557-0042 大阪府大阪市西成区岸里東２丁目１０?2　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b21d30af2144309ba20f78ab840c68d = L.marker(
+                [34.647116, 135.489937],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_7b21d30af2144309ba20f78ab840c68d.bindTooltip(
+                `<div>
+                     みんな食堂 ソレイユ       日程: 第3土曜日11:00~16:00 　参加費: こども(中学生まで）100円 保護者300円 大人500円　<br/>〒557-0031 大阪市西成区鶴見橋3‐1‐41　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_addb1056a2e94b7b95f13d8197f9da80 = L.marker(
+                [34.644386, 135.493987],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_addb1056a2e94b7b95f13d8197f9da80.bindTooltip(
+                `<div>
+                     こもれびカフェ×えほんとごはん       日程: 毎週金曜日16:30~20:00　参加費: こども100円、大人400円　TEL:06-6631-6138<br/>〒557-0032 大阪市西成区旭1-7-17　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3fa1099a1be840d98161c17a00a961b9 = L.marker(
+                [34.684296999999994, 135.443159],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_3fa1099a1be840d98161c17a00a961b9.bindTooltip(
+                `<div>
+                     酉島こども食堂       日程: 毎月第２土曜日10:30~14:30 小、中学生１００円 高校生 ２００円 未就学児＋大人 ３００円 <br/>〒554-0051 大阪市此花区酉島1-15-1　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd77075daedb41ffb71531968b4401f8 = L.marker(
+                [34.743361, 135.49944399999998],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_fd77075daedb41ffb71531968b4401f8.bindTooltip(
+                `<div>
+                     東三国子どもカフェ       日程: 毎月第2土曜 12:00～15:00　参加費: こども無料、大人任意の参加費<br/>〒532-0002 大阪府大阪市淀川区東三国2-22-10　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_094e255ca81042d5bcfad95b893183a9 = L.marker(
+                [34.671363, 135.507532],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_094e255ca81042d5bcfad95b893183a9.bindTooltip(
+                `<div>
+                     しま☆ルーム       日程: 毎週水曜日15:30～19:30　参加費: 幼児～高校生無料<br/>〒542-0082 大阪府大阪市中央区島之内２丁目１２?19　2階　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b54c5f69417c4ebd919e9faa5391c2cf = L.marker(
+                [34.713337, 135.477068],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_b54c5f69417c4ebd919e9faa5391c2cf.bindTooltip(
+                `<div>
+                     新北野子ども食堂       日程: 第3土曜日17:30～20:00　参加費:こども無料、大人500円　TEL: 080-4240-0691<br/>〒532-0025 大阪府大阪市淀川区新北野２丁目９?7 2階　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47c1776e7bca4cc992cf0672c23e8538 = L.marker(
+                [34.664181, 135.458326],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_47c1776e7bca4cc992cf0672c23e8538.bindTooltip(
+                `<div>
+                     みなとみんなの食堂       日程:毎月第4木曜日 17:30～19:30　参加費:高校生以下：100円 / 大人：300円<br/>〒552-0003 大阪府大阪市港区磯路３丁目３?4　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c9e177e04054f7f99981f461b91cc70 = L.marker(
+                [34.695634999999996, 135.530295],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_9c9e177e04054f7f99981f461b91cc70.bindTooltip(
+                `<div>
+                     京橋こどもカレー食堂       日程:毎月第１火曜日18:00~20:00　参加費:子供（中学３年生まで）1人1円　付き添いの大人 1人300円<br/>大阪市都島区片町2-11-24大阪シティホテル（２階）　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_849dfda250314d0382ef5a798a55ec9e = L.marker(
+                [34.742762, 135.517087],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_849dfda250314d0382ef5a798a55ec9e.bindTooltip(
+                `<div>
+                     淡路こども食堂       日程:月1回/第2金曜日17:30~19:30　参加費:こども100円/大人400円　<br/>〒533-0032大阪市東淀川区淡路5-10-7　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_619e20396c984f83ada257f9e6ef62d1 = L.marker(
+                [34.720117, 135.561505],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_619e20396c984f83ada257f9e6ef62d1.bindTooltip(
+                `<div>
+                     子ども食堂もぐもぐ       日程:第4土曜日17:00～　参加費:無料（幼児～中学生）、大人300円　<br/>大阪市旭区新森7-12-11 旭東会館　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24ed0cf6375d499a8393fb81e0e619e0 = L.marker(
+                [34.64375, 135.512816],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_24ed0cf6375d499a8393fb81e0e619e0.bindTooltip(
+                `<div>
+                     ときわ こども食堂       日程:毎週木曜日16:00～18:30　参加費:300円　TEL: 06-6629-2728<br/>大阪市阿倍野区阿倍野筋2-4-48 金村ビル1階　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0fbcf6db7154f4fa2f74b9965fd2025 = L.marker(
+                [34.600848, 135.497104],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_a0fbcf6db7154f4fa2f74b9965fd2025.bindTooltip(
+                `<div>
+                     おりおのワイワイ食堂       日程:第1・3土曜日12:00～14:00　参加費:こども100円、大人300円<br/>大阪市住吉区遠里小野1-12-16　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a301bd53297b40b9841550b3129f1f77 = L.marker(
+                [34.589964, 135.508328],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_a301bd53297b40b9841550b3129f1f77.bindTooltip(
+                `<div>
+                     あゆみ広場       日程:第2土曜日11:00～14:00　参加費:なし　TEL: 06-6697-0974<br/>大阪市住吉区浅香2-2-57　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b825d40ac8344e5a825f1c454a6df63 = L.marker(
+                [34.630823, 135.528483],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_0b825d40ac8344e5a825f1c454a6df63.bindTooltip(
+                `<div>
+                     きたたなべ子ども食堂       日程:毎月 第１月曜日 １７：００～１９：００　参加費:こども１００円、大人３００円　TEL: 06-6628-0066<br/>大阪市東住吉区北田辺６－２－２０　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5709b8ff9def45f2b23b2b2e1fbbdadb = L.marker(
+                [34.740029, 135.500466],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_5709b8ff9def45f2b23b2b2e1fbbdadb.bindTooltip(
+                `<div>
+                     北中島宿題ひろば       日程:第3水曜日15:00～17:00　参加費:無料<br/>大阪市淀川区東三国1-20-6　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03054b680fad4d98be955134a24c77ad = L.marker(
+                [34.704395, 135.452291],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_03054b680fad4d98be955134a24c77ad.bindTooltip(
+                `<div>
+                     TOTTOひめじまこども食堂       日程:第4土曜日11:00～13:00　参加費:無料　TEL: 06-6473-5151<br/>大阪市西淀川区姫島4-14-20 姫島福祉会館　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41f2b0ecd99e4694a500c86ef2ad52cc = L.marker(
+                [34.654832, 135.50118],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_41f2b0ecd99e4694a500c86ef2ad52cc.bindTooltip(
+                `<div>
+                     浪速区青指子ども食堂       日程:第4日曜日12:00～15:00　参加費:こども無料、大人300円　<br/>大阪市浪速区敷津東3-3-11 海鮮ふたば屋　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_051dd1e2b92542bb95eeba3bb7697957 = L.marker(
+                [34.741911, 135.522216],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_051dd1e2b92542bb95eeba3bb7697957.bindTooltip(
+                `<div>
+                     ぽっかぽか子どもあさ食堂       日程:第2・4火曜日7:45～8:30　参加費:なし　TEL: 06-6370-4138<br/>大阪市東淀川区菅原7-10-3 ぽっかぽか菅原ハウス　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14bdd0b42c9c4b09a58410468d0999e5 = L.marker(
+                [34.721159, 135.54261699999998],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_14bdd0b42c9c4b09a58410468d0999e5.bindTooltip(
+                `<div>
+                     こども食堂「まなび」       日程;毎月第３水曜日１７：００～１９：３０　参加費:寄付として100円<br/>大阪市旭区中宮1-11-4 旭区民センター調理室　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08c41a29cd104b3d9d1cac16522b00a9 = L.marker(
+                [34.589065000000005, 135.50226899999998],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_08c41a29cd104b3d9d1cac16522b00a9.bindTooltip(
+                `<div>
+                     山之内 こども食堂       日程:第1土曜日12:00～16:00　参加費:100円　TEL: 06-6690-7997<br/>大阪市住吉区山之内4-3-13 山之内 和会館　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9346409c56ed4f969e3ce05d34334846 = L.marker(
+                [34.644189000000004, 135.506101],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_9346409c56ed4f969e3ce05d34334846.bindTooltip(
+                `<div>
+                     永信こども食堂       日程:第1・3水曜日18:00～20:00　参加費:子どもは無料、大人は10円以上のカンパ　TEL: 06-6633-8415<br/>大阪市西成区山王3-10-20 永信防災会館　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35876052aa2842e1896cc746f3a4832e = L.marker(
+                [34.667078000000004, 135.512926],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_35876052aa2842e1896cc746f3a4832e.bindTooltip(
+                `<div>
+                     こども食堂　たこ焼きハウス       日程:毎週土曜日13:00～15:00　参加費:大人２００円、こども無料　TEL: 06-6191-6701<br/>大阪市中央区高津1-3-6 ＪＤＣビル 4階食堂　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64ad351fc0d44f94bc84cf267eb99431 = L.marker(
+                [34.742974, 135.51126100000002],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_64ad351fc0d44f94bc84cf267eb99431.bindTooltip(
+                `<div>
+                     朝ごはんやさん       日程:毎週月・水・金曜日7:30～8:30　TEL: 06-6322-1023<br/>大阪市東淀川区西淡路5-5-32 大阪市立西淡路小学校　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d9b9ce34a9742aa89e5130d389ac4ff = L.marker(
+                [34.73251, 135.550997],
+                {}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            marker_4d9b9ce34a9742aa89e5130d389ac4ff.bindTooltip(
+                `<div>
+                     ホームスペース　花しょうぶ       日程:毎週水曜日17:00～　参加費:　小中学生無料、高校生300円、大人500円（飲物300円）　TEL: 06-6958-0011<br/>大阪市旭区太子橋1-23-15　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_c93ff5d2d83142468f5be370435594b2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            var tile_layer_d0da00c68825441e969f87360409fca8 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            var tile_layer_cfe69a676e3c41fa892d18cb175a2ed3 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+        
+    
+            var layer_control_b98e444ccd9b4090b19d8d1a28c9922d = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c93ff5d2d83142468f5be370435594b2,
+                    "stamenterrain" : tile_layer_d0da00c68825441e969f87360409fca8,
+                    "stamentoner" : tile_layer_cfe69a676e3c41fa892d18cb175a2ed3,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_b98e444ccd9b4090b19d8d1a28c9922d.base_layers,
+                layer_control_b98e444ccd9b4090b19d8d1a28c9922d.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_bafb02329c6649f1864ee4c2ca03206b);
+            tile_layer_d0da00c68825441e969f87360409fca8.remove();
+            tile_layer_cfe69a676e3c41fa892d18cb175a2ed3.remove();
+        
+</script>
