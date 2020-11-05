@@ -1,44 +1,107 @@
+import os
+import tempfile
+import webbrowser
+import pandas as pd
+import numpy as np
+
+import folium as folium
+
 from django.shortcuts import render, redirect
-from django.contrib.auth.models import User
-from django.db import IntegrityError
-from django.contrib.auth import authenticate,login
-from .models import ReviewModel
+from django.views import View
+
+import requests
+from bs4 import BeautifulSoup
+import time
 
 
-# Create your views here.
-def signupview(request):
-    if request.method == 'POST':
-        usernama_data = request.POST['username_data']
-        password_data = request.POST['password_data']
-        try:
-            User.objects.create_user(usernama_data,'',password_data)
-        except IntegrityError:
-            return render(request, 'signup.html', {'error':'このユーザーは既に登録されています。'})
-    else:
-        return render(request, 'signup.html', {})
 
-    return render(request, 'signup.html', {})
+URL = 'http://www.geocoding.jp/api/'
+
+my_data = dict()
+
+i = 0
 
 
-def gridview(request):
-    return render(request,'grid.html')
+class SearchView(View):
 
+    def get(self, request, *args, **kwargs):
+        context = {
 
-def loginview(request):
-    if request.method == 'POST':
-        username_data = request.POST['username_data']
-        password_data = request.POST['password_data']
-        user = authenticate(request,username=username_data,password=password_data)
+        }
+        return render(request, 'search.html', context)
 
-        if user is not None:
-            login(request,user)
-            return redirect('list')
+    def post(self, request, *args, **kwargs):
+
+        name = request.POST['name']
+        address = request.POST['address']
+        add = name + '' + address
+        # address = request.POST['address']
+
+        url = 'http://www.geocoding.jp/api/'
+
+        payload = {"v": 1.1, 'q': add}
+        r = requests.get(url, params=payload)
+        ret = BeautifulSoup(r.content, 'lxml')
+
+        if ret.find('error'):
+            raise ValueError(f"Invalid address submitted. {add}")
         else:
-            return redirect('login')
+            lat = ret.find('lat').string
+            lon = ret.find('lng').string
+            time.sleep(10)
 
-    return render(request,'login.html')
+        context = {
+
+            'name': request.POST['name'],
+            'address': request.POST['address'],
+            'lat': float(lat),
+            'lon': float(lon),
+        }
+
+        global i
+        my_data[i] = context
+
+        i += 1
+
+        map_osm = fmap(location=[lat, lon], zoom_start=18)
+
+        j = 0
 
 
-def listview(request):
-    object_list = ReviewModel.objects.all()
-    return render(request,'list.html',{'object_list':object_list})
+
+        for data1 in my_data.values():
+
+            marker = folium.Marker(
+                [data1.get("lat"), data1.get("lon")], tooltip=data1.get("name") + "<br/>" + data1.get("address")).add_to(
+                map_osm)
+            map_osm.add_child(marker)
+
+        fmap.show(map_osm)
+
+        # return render(request, 'list.html', context)
+        return render(request, 'search.html', context)
+
+
+
+search = SearchView.as_view()
+
+
+class fmap(folium.Map):
+
+    def __init__(self, **kw):
+        super().__init__(**kw)
+        self.listtf = list()
+
+    def show(map_osm):
+        tf = tempfile.NamedTemporaryFile(suffix='.html', delete=False)
+        map_osm.save(tf)
+        webbrowser.open(tf.name)
+
+        # self.listtf.append(tf)
+
+    def __del__(self):
+        list(map(lambda tf: os.remove(tf.name), self.listtf))
+
+
+
+

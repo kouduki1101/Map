@@ -1,21 +1,13 @@
-{% extends 'base.html' %}
-{% load bootstrap4 %}
-{% block header %}
-{% endblock header %}
-
+{% load static %}
 {% block content %}
-<div class ='container'>
-    {% for item in object_list %}
-    <div class="card">
-        <h5 class="card-header">{{ item.title }}</h5>
-        <div class="card-body">
-            <h5 class="card-title">投稿者：{{ item.author }}</h5>
-            <h5 class="card-title">レビューが参考になった人:{{ item.useful_review }}人</h5>
-            <a href="{% url 'list' %}" class="btn btn-primary">詳しく見る</a>
-        </div>
-    </div>
-    {% endfor %}
 
-</div>
+    <body>
+
+
+    <input type="button" value="表示する">
+
+
+
+    </body>
 
 {% endblock content %}
