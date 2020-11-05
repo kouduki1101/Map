@@ -13,7 +13,7 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-from .settings_secret import *
+from settings_secret import *
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
