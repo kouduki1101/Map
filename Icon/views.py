@@ -117,3 +117,5 @@ class fmap(folium.Map):
 
 def signup(request):
     return render(request, 'signup.html')
+
+

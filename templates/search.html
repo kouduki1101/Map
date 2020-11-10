@@ -5,80 +5,102 @@
     <body>
 
     <div class="container-fluid">
-        <div class="a1">
-            <div class="row">
+
+        <div class="row">
 
 
-                <div class="col-md-12">column1
+            <div class="col-md-12">
 
-                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                <form action="" method="post">
+                    <p>
+                        <input type="image" src="" alt="ホームボタン">
+                    </p>
+                </form>
 
-
-                </div>
 
             </div>
+
+
         </div>
-        <div class="b1">
-            <div class="row">
 
-                <div class="col-md-8">Data column
+        <div class="row">
 
 
+            <div class="col-md-12 news">
 
-                    <table border="1" width="500" cellspacing="0" cellpadding="5" bordercolor="#333333">
-                        <tr>
-                            <th bgcolor="#EE0000"><font color="#FFFFFF">名称</font></th>
-                            <th bgcolor="#EE0000" width="150"><font color="#FFFFFF">緯度</font></th>
-                            <th bgcolor="#EE0000" width="200"><font color="#FFFFFF">経度</font></th>
-                        </tr>
-                        <tr>
-                            <td bgcolor="#FFFFFF" align="right" nowrap>{{ name }}</td>
-                            <td bgcolor="#FFFFFF" valign="top" width="150">{{ lat }}</td>
-                            <td bgcolor="#FFFFFF" valign="top" width="200">{{ lon }}</td>
-                        </tr>
-                    </table>
-
-
-
-
-
-                </div>
-
-                <div class="col-md-4">地点情報
-
-                    <form action="/search" method="post">
-
-                        {% csrf_token %}
-
-                        <div>
-                            <label for="name">名称</label>
-                            <textarea id="name" name="name">{{ name }}</textarea>
-                        </div>
-                        <div>
-                            <label for="address">所在地</label>
-                            <textarea id="address" name="address">{{ address }}</textarea>
-                        </div>
-
-
-                        {#                        <div>#}
-                        {#                            <label for="lat">緯度</label>#}
-                        {#                            <input type="text" id="lat" name="lat" value="{{ lat }}">#}
-                        {#                        </div>#}
-                        {#                        <div>#}
-                        {#                            <label for="lon">経度</label>#}
-                        {#                            <input type="text" id="lon" name="lon" value="{{ lon }}">#}
-                        {#                        </div>#}
-
-                        <input type="submit" value="送信する">
-
-
-                    </form>
-
-
-                </div>
+                ここに新着ニュースが表示される
 
 
             </div>
+
+
+        </div>
+
+
+        <div class="row">
+
+
+            <div class="col-md-8">地点データ
+
+
+                <table border="1" width="500" cellspacing="0" cellpadding="5" bordercolor="#333333">
+                    <tr>
+                        <th bgcolor="#EE0000"><font color="#FFFFFF">名称</font></th>
+                        <th bgcolor="#EE0000" width="150"><font color="#FFFFFF">緯度</font></th>
+                        <th bgcolor="#EE0000" width="200"><font color="#FFFFFF">経度</font></th>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#FFFFFF" align="right" nowrap>{{ name }}</td>
+                        <td bgcolor="#FFFFFF" valign="top" width="150">{{ lat }}</td>
+                        <td bgcolor="#FFFFFF" valign="top" width="200">{{ lon }}</td>
+                    </tr>
+                </table>
+
+
+                <iframe id="inlineFrameExample"
+                        title="Inline Frame Example"
+                        width="300"
+                        height="200"
+                        src="test2.html">
+                </iframe>
+
+
+            </div>
+
+            <div class="col-md-4">地点情報
+
+                <form action="/search" method="post">
+
+                    {% csrf_token %}
+
+                    <div>
+                        <label for="name">名称</label>
+                        <textarea id="name" name="name">{{ name }}</textarea>
+                    </div>
+                    <div>
+                        <label for="address">所在地</label>
+                        <textarea id="address" name="address">{{ address }}</textarea>
+                    </div>
+
+
+                    {#                        <div>#}
+                    {#                            <label for="lat">緯度</label>#}
+                    {#                            <input type="text" id="lat" name="lat" value="{{ lat }}">#}
+                    {#                        </div>#}
+                    {#                        <div>#}
+                    {#                            <label for="lon">経度</label>#}
+                    {#                            <input type="text" id="lon" name="lon" value="{{ lon }}">#}
+                    {#                        </div>#}
+
+                    <input type="submit" value="送信する">
+
+
+                </form>
+
+
+            </div>
+
+
         </div>
 
     </div>

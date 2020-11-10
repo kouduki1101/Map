@@ -1,10 +1,29 @@
-a1 {
-    font-size: 20px;
-    color: red;
+.col-md-12{
+    font-size: 30px;
+    color: lawngreen;
+    background: lightslategrey;
+
+}
+
+.news{
+    font-size: 30px;
+    color: lawngreen;
+    background: mediumpurple;
 }
 
 
-b1 {
-    font-size: 20px;
+.col-md-8 {
+    font-size: 30px;
     color: red;
+    background: lightgrey;
 }
+
+.col-md-4 {
+    font-size: 30px;
+
+    background: mediumpurple;
+}
+
+
+
+
