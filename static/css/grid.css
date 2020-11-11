@@ -1,13 +1,14 @@
 .col-md-12{
     font-size: 30px;
-    color: lawngreen;
+    color: white;
     background: lightslategrey;
+
 
 }
 
 .news{
     font-size: 30px;
-    color: lawngreen;
+    color: white;
     background: mediumpurple;
 }
 
@@ -15,15 +16,130 @@
 .col-md-8 {
     font-size: 30px;
     color: red;
-    background: lightgrey;
+    background: mediumpurple;
+
 }
 
 .col-md-4 {
     font-size: 30px;
-
+    color: white;
     background: mediumpurple;
+}
+
+.data{
+    font-size: 30px;
+    color: white;
+    background: lightslategrey;
+    margin: 0px 15px 0px 15px;
+
 }
 
 
 
+.home_btn{
+    border: 0px;
+    width:75px;
+    height:80px;
+    background: url(../png/home.png) left top no-repeat;
+    margin: 15px 15px 0px 15px;
+}
 
+
+.home_btn:hover{
+    cursor: pointer;
+    opacity:0.5;
+}
+
+
+.zoom_btn{
+    border: 0px;
+    width:75px;
+    height:80px;
+    background: url(../png/zoom.png) left top no-repeat;
+    margin: 35px 0px 0px 250px;
+}
+
+
+.zoom_btn:hover{
+    cursor: pointer;
+    opacity:0.5;
+}
+
+
+.search_btn{
+    border: 0px;
+    width:75px;
+    height:80px;
+    background: url(../png/search.png) left top no-repeat;
+    margin: 5px 0px 0px 20px;
+}
+
+
+.search_btn:hover{
+    cursor: pointer;
+    opacity:0.5;
+}
+
+.edit_btn{
+    border: 0px;
+    width:75px;
+    height:80px;
+    background: url(../png/edit.png) left top no-repeat;
+    margin: 5px 0px 0px 20px;
+}
+
+
+.edit_btn:hover{
+    cursor: pointer;
+    opacity:0.5;
+}
+
+.comment_btn{
+    border: 0px;
+    width:110px;
+    height:80px;
+    background: url(../png/comment.png) left top no-repeat;
+    margin: 5px 0px 0px 0px;
+}
+
+
+.comment_btn:hover{
+    cursor: pointer;
+    opacity:0.5;
+}
+
+.fav_btn{
+    border: 0px;
+    width:110px;
+    height:80px;
+    background: url(../png/fav.png) left top no-repeat;
+    margin: 5px 0px 0px 20px;
+}
+
+
+.fav_btn:hover{
+    cursor: pointer;
+    opacity:0.5;
+}
+
+.user{
+    border: 0px;
+    width:300px;
+    height:50px;
+    background: lightgrey;
+    margin: 25px 0px 30px 20px;
+}
+
+.account_btn{
+    border: 0px;
+    width:110px;
+    height:80px;
+    background: url(../png/account.png) left top no-repeat;
+    margin: 5px 0px 0px 30px;
+}
+
+
+.account_btn:hover{
+    cursor: pointer;
+    opacity:0.5;
+}
