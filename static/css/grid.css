@@ -1,145 +1,163 @@
-.col-md-12{
+.container-fluid {
+
+    background-color: mediumpurple;
+    background-image: radial-gradient(#fff 28%, transparent 33%),
+    radial-gradient(#fff 28%, transparent 33%);
+    background-size: 5px 5px;
+    background-position: 0 0, 16px 16px;
+
+}
+
+.header {
     font-size: 30px;
     color: white;
-    background: lightslategrey;
+    background: rgba(167, 164, 197, 1);
 
 
 }
 
-.news{
+.news {
     font-size: 30px;
     color: white;
-    background: mediumpurple;
+    background: rgba(155, 151, 206, 0.8);
 }
 
 
 .col-md-8 {
     font-size: 30px;
-    color: red;
-    background: mediumpurple;
+    color: white;
+    background: rgba(155, 151, 206, 0.8);
 
 }
 
 .col-md-4 {
     font-size: 30px;
     color: white;
-    background: mediumpurple;
-}
-
-.data{
-    font-size: 30px;
-    color: white;
-    background: lightslategrey;
-    margin: 0px 15px 0px 15px;
-
+    background: rgba(155, 151, 206, 0.8);
 }
 
 
-
-.home_btn{
+.home_btn {
     border: 0px;
-    width:75px;
-    height:80px;
+    width: 75px;
+    height: 80px;
     background: url(../png/home.png) left top no-repeat;
     margin: 15px 15px 0px 15px;
 }
 
 
-.home_btn:hover{
+.home_btn:hover {
     cursor: pointer;
-    opacity:0.5;
+    opacity: 0.5;
 }
 
 
-.zoom_btn{
+.zoom_btn {
     border: 0px;
-    width:75px;
-    height:80px;
+    width: 75px;
+    height: 80px;
     background: url(../png/zoom.png) left top no-repeat;
     margin: 35px 0px 0px 250px;
 }
 
 
-.zoom_btn:hover{
+.zoom_btn:hover {
     cursor: pointer;
-    opacity:0.5;
+    opacity: 0.5;
 }
 
 
-.search_btn{
+.search_btn {
     border: 0px;
-    width:75px;
-    height:80px;
+    width: 75px;
+    height: 80px;
     background: url(../png/search.png) left top no-repeat;
     margin: 5px 0px 0px 20px;
 }
 
 
-.search_btn:hover{
+.search_btn:hover {
     cursor: pointer;
-    opacity:0.5;
+    opacity: 0.5;
 }
 
-.edit_btn{
+.edit_btn {
     border: 0px;
-    width:75px;
-    height:80px;
+    width: 75px;
+    height: 80px;
     background: url(../png/edit.png) left top no-repeat;
     margin: 5px 0px 0px 20px;
 }
 
 
-.edit_btn:hover{
+.edit_btn:hover {
     cursor: pointer;
-    opacity:0.5;
+    opacity: 0.5;
 }
 
-.comment_btn{
+.comment_btn {
     border: 0px;
-    width:110px;
-    height:80px;
+    width: 110px;
+    height: 80px;
     background: url(../png/comment.png) left top no-repeat;
     margin: 5px 0px 0px 0px;
 }
 
 
-.comment_btn:hover{
+.comment_btn:hover {
     cursor: pointer;
-    opacity:0.5;
+    opacity: 0.5;
 }
 
-.fav_btn{
+.fav_btn {
     border: 0px;
-    width:110px;
-    height:80px;
+    width: 110px;
+    height: 80px;
     background: url(../png/fav.png) left top no-repeat;
     margin: 5px 0px 0px 20px;
 }
 
 
-.fav_btn:hover{
+.fav_btn:hover {
     cursor: pointer;
-    opacity:0.5;
+    opacity: 0.5;
 }
 
-.user{
+.user {
     border: 0px;
-    width:300px;
-    height:50px;
+    width: 300px;
+    height: 50px;
     background: lightgrey;
     margin: 25px 0px 30px 20px;
 }
 
-.account_btn{
+.account_btn {
     border: 0px;
-    width:110px;
-    height:80px;
+    width: 110px;
+    height: 80px;
     background: url(../png/account.png) left top no-repeat;
     margin: 5px 0px 0px 30px;
 }
 
 
-.account_btn:hover{
+.account_btn:hover {
     cursor: pointer;
-    opacity:0.5;
+    opacity: 0.5;
+}
+
+.gap {
+
+    color: rgba(155, 151, 206, 0.8);
+    font-size: 30px;
+    background: rgba(155, 151, 206, 0.8);
+
+}
+
+
+.footer {
+    font-size: 30px;
+    color: white;
+    background: rgba(167, 164, 197, 1);
+    margin: 0px 15px 0px 15px;
+
 }
