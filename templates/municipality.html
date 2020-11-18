@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_72794cc4cc264d47b47f84f15ee83e6b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_72794cc4cc264d47b47f84f15ee83e6b" ></div>
+        
+</body>
+<script>    
+    
+            var map_72794cc4cc264d47b47f84f15ee83e6b = L.map(
+                "map_72794cc4cc264d47b47f84f15ee83e6b",
+                {
+                    center: [34.684340, 135.511282],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2d9ad5e554db49ce9c99500f3868f553 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_72794cc4cc264d47b47f84f15ee83e6b);
+        
+    
+            var marker_0c1acd989a5c4609b72b7fef2b714730 = L.marker(
+                [34.661646000000005, 135.517705],
+                {}
+            ).addTo(map_72794cc4cc264d47b47f84f15ee83e6b);
+        
+    
+            marker_0c1acd989a5c4609b72b7fef2b714730.bindTooltip(
+                `<div>
+                     公益財団法人　大阪国際交流センター<br/>〒543-0001 大阪市天王寺区上本町８丁目２番６号
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b71c51ab54d34b4cbe37efebc38deea1 = L.marker(
+                [34.659825, 135.515556],
+                {}
+            ).addTo(map_72794cc4cc264d47b47f84f15ee83e6b);
+        
+    
+            marker_b71c51ab54d34b4cbe37efebc38deea1.bindTooltip(
+                `<div>
+                     大阪市立男女共同参画センター<br/>〒543-0002　大阪市天王寺区上汐5-6-25 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_158050ea8b274002acb0b3aaff6c3503 = L.marker(
+                [34.680991999999996, 135.515953],
+                {}
+            ).addTo(map_72794cc4cc264d47b47f84f15ee83e6b);
+        
+    
+            marker_158050ea8b274002acb0b3aaff6c3503.bindTooltip(
+                `<div>
+                     公益社団法人 大阪府産業資源循環協会<br/>〒540-0011 大阪府大阪市中央区農人橋１丁目１-２２
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c83b39921fe746e59582865b9272aed5 = L.marker(
+                [34.684064, 135.50496],
+                {}
+            ).addTo(map_72794cc4cc264d47b47f84f15ee83e6b);
+        
+    
+            marker_c83b39921fe746e59582865b9272aed5.bindTooltip(
+                `<div>
+                     独立行政法人 中小企業基盤整備機構 近畿本部<br/>〒541-0052 大阪府大阪市中央区安土町２丁目３-１３
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f298f7b508a34d79aafb275bb8700753 = L.marker(
+                [34.688203, 135.199725],
+                {}
+            ).addTo(map_72794cc4cc264d47b47f84f15ee83e6b);
+        
+    
+            marker_f298f7b508a34d79aafb275bb8700753.bindTooltip(
+                `<div>
+                     独立行政法人　日本貿易振興機構（JETRO）　神戸貿易情報センター<br/>〒651-0083 兵庫県神戸市中央区浜辺通５丁目１-１４
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8cb2dc2a5ec44d0896948bca86d30325 = L.marker(
+                [34.680585, 135.179977],
+                {}
+            ).addTo(map_72794cc4cc264d47b47f84f15ee83e6b);
+        
+    
+            marker_8cb2dc2a5ec44d0896948bca86d30325.bindTooltip(
+                `<div>
+                     兵庫県行政書士会<br/>JR神戸駅から徒歩5分 神戸市中央区東川崎町1丁目1番3号 神戸クリスタルタワー13階
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a1a1b2c8b984a30be542b6294d34d40 = L.marker(
+                [34.682614, 135.503879],
+                {}
+            ).addTo(map_72794cc4cc264d47b47f84f15ee83e6b);
+        
+    
+            marker_7a1a1b2c8b984a30be542b6294d34d40.bindTooltip(
+                `<div>
+                     公益社団法人　大阪府工業協会<br/>〒541-0054 大阪府大阪市中央区南本町２丁目６-１２ サンマリオンＮＢＦタワー４階
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e2b314cebb44e3db72944185c7555ea = L.marker(
+                [34.698413, 135.215326],
+                {}
+            ).addTo(map_72794cc4cc264d47b47f84f15ee83e6b);
+        
+    
+            marker_3e2b314cebb44e3db72944185c7555ea.bindTooltip(
+                `<div>
+                     アジア太平洋地球変動研究ネットワーク APNセンター<br/>〒651-0073　兵庫県神戸市中央区脇浜海岸通1-5-2 人と防災未来センター東館4階
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b22ae21659448cf977801f03bfb81cf = L.marker(
+                [34.684872, 135.511148],
+                {}
+            ).addTo(map_72794cc4cc264d47b47f84f15ee83e6b);
+        
+    
+            marker_7b22ae21659448cf977801f03bfb81cf.bindTooltip(
+                `<div>
+                     公益財団法人大阪産業局<br/>〒541-0053 大阪市中央区本町1-4-5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a5e13657cd348889fdc23509a169322 = L.marker(
+                [34.68434, 135.511282],
+                {}
+            ).addTo(map_72794cc4cc264d47b47f84f15ee83e6b);
+        
+    
+            marker_6a5e13657cd348889fdc23509a169322.bindTooltip(
+                `<div>
+                     大阪商工会議所<br/>〒540-0029 大阪府大阪市中央区本町橋２-８
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_8c2bcb40736d4a2bb7cae03ec5449e27 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_72794cc4cc264d47b47f84f15ee83e6b);
+        
+    
+            var tile_layer_84d29d3e8c464fceb3bfb1c5bf0c37e2 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_72794cc4cc264d47b47f84f15ee83e6b);
+        
+    
+            var tile_layer_698b9ebe7e6f4a6bb48121b15fc314f9 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_72794cc4cc264d47b47f84f15ee83e6b);
+        
+    
+            var layer_control_47fd154a3eb8467f890b4238097a682e = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_8c2bcb40736d4a2bb7cae03ec5449e27,
+                    "stamenterrain" : tile_layer_84d29d3e8c464fceb3bfb1c5bf0c37e2,
+                    "stamentoner" : tile_layer_698b9ebe7e6f4a6bb48121b15fc314f9,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_47fd154a3eb8467f890b4238097a682e.base_layers,
+                layer_control_47fd154a3eb8467f890b4238097a682e.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_72794cc4cc264d47b47f84f15ee83e6b);
+            tile_layer_84d29d3e8c464fceb3bfb1c5bf0c37e2.remove();
+            tile_layer_698b9ebe7e6f4a6bb48121b15fc314f9.remove();
+        
+</script>

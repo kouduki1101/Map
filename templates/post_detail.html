@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="post_detail">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <div class="class">
+            <h2>{{ post.title }}</h2>
+        </div>
+        <p>
+        <h2>{{ post.content }}</h2>
+        <div class="class">
+            <button class="button3" onclick="location.href={{ post.id }}">マップ表示</button>
+        </div>
+        </p>
+
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endblock %}

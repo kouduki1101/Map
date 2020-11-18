@@ -1,18 +1,17 @@
 import os
 import tempfile
 import webbrowser
-import pandas as pd
-import numpy as np
-
 import folium as folium
-from django.http import HttpResponseRedirect
-
+from django.db import IntegrityError
 from django.shortcuts import render, redirect
 from django.views import View
-
 import requests
 from bs4 import BeautifulSoup
 import time
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login
+
+from django.shortcuts import render, get_object_or_404
 
 URL = 'http://www.geocoding.jp/api/'
 
@@ -51,7 +50,7 @@ class SearchView(View):
             lon = ret.find('lng').string
             time.sleep(10)
 
-        context = {
+        text = {
 
             'name': request.POST['name'],
             'address': request.POST['address'],
@@ -60,7 +59,7 @@ class SearchView(View):
         }
 
         global i
-        my_data[i] = context
+        my_data[i] = text
 
         map_osm = fmap(location=[lat, lon], zoom_start=18)
 
@@ -88,8 +87,12 @@ class SearchView(View):
 
         i += 1
 
+        print(my_data)
 
-
+        #contextに渡す値はjson形式でないとテンプレートに渡りません
+        context = {
+            'my_data': my_data
+        }
 
         return render(request, 'search.html', context)
 
@@ -115,7 +118,34 @@ class fmap(folium.Map):
         list(map(lambda tf: os.remove(tf.name), self.listtf))
 
 
-def signup(request):
-    return render(request, 'signup.html')
+def signupview(request):
+    if request.method == 'POST':
+        username_data = request.POST['username_data']
+        password_data = request.POST['password_data']
+
+        try:
+            User.objects.create_user(username_data, '', password_data)
+
+        except IntegrityError:
+            return render(request, 'signup.html', {'error': 'このユーザーは既に登録されています'})
+
+    else:
+        print(User.objects.all())
+    return render(request, 'signup.html', {})
 
 
+def loginview(request):
+    if request.method == 'POST':
+        username_data = request.POST['username_data']
+        password_data = request.POST['password_data']
+        user = authenticate(request, username=username_data,
+                            password=password_data)
+
+        if user is not None:
+            login(request, user)
+            return render(request, 'search.html')
+
+        else:
+            return redirect('login')
+
+    return render(request, 'login.html')

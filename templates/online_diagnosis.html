@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c32b9760643d4555b89911cbf598b4e6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c32b9760643d4555b89911cbf598b4e6" ></div>
+        
+</body>
+<script>    
+    
+            var map_c32b9760643d4555b89911cbf598b4e6 = L.map(
+                "map_c32b9760643d4555b89911cbf598b4e6",
+                {
+                    center: [34.6594, 135.4996],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d130c356c04f422f844b7aeff5e483cb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            var marker_11282906189a437b88b075fdbb5bb2e5 = L.marker(
+                [34.680013, 135.533899],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_11282906189a437b88b075fdbb5bb2e5.bindTooltip(
+                `<div>
+                     森ノ宮胃腸内視鏡 ふじたクリニック  受付時間: 08:30~12:00 16:30~18:30 <br/>〒540-0003 大阪府大阪市中央区１丁目１ 森ノ宮中央1-1-30 ビエラ森ノ宮3F JR大阪環状線　森ノ宮駅 南出口すぐ TEL : 06-6910-7140
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9619ca01e757498db0a0e268eeb19585 = L.marker(
+                [34.700479, 135.496329],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_9619ca01e757498db0a0e268eeb19585.bindTooltip(
+                `<div>
+                     泌尿器科ほしやまクリニック   受付時間: 10:00~13:00 16:00~20:00 <br/>〒530-0001 大阪府大阪市北区梅田１丁目８?番１６号 ヒルトンプラザイースト５階 四つ橋線「西梅田」駅 北改札口より徒歩すぐ TEL: 06-6343-3511
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_305e80f5bf1e4d3bbf681cf8a0f5e38a = L.marker(
+                [34.675632, 135.52164199999999],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_305e80f5bf1e4d3bbf681cf8a0f5e38a.bindTooltip(
+                `<div>
+                     こまい腎・泌尿器科クリニック  受付時間: 09:00~12:30 15:30~18:30 <br/>〒543-0011 大阪府大阪市天王寺区清水谷町５?22 H A BLDG ２階 大阪メトロ谷町線・長堀鶴見緑地線『谷町六丁目』7駅番出入口から徒歩約3分 TEL: 06-6796-8881
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_270a2195c7ba4452b007174abc0a05cf = L.marker(
+                [34.60942, 135.559788],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_270a2195c7ba4452b007174abc0a05cf.bindTooltip(
+                `<div>
+                     いぬいクリニック  受付時間: 09:00~12:00 14:30~19:00 <br/>〒540-0021 大阪府大阪市平野区喜連東３丁目5-60 地下鉄谷町線 出戸駅1番出口 徒歩7分／ 喜連瓜破駅4番出口 徒歩10分 TEL:06-6706-0551
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c610b9e73e048f68b4485da010bb628 = L.marker(
+                [34.733872, 135.495808],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_5c610b9e73e048f68b4485da010bb628.bindTooltip(
+                `<div>
+                     のぞみハートクリニック  受付時間: 09:30~12:30 15:30~18:30 <br/>〒532-0003 新大阪トラストタワー 1階 ３丁目-５-36 宮原 淀川区 大阪市 大阪府 532-0003 新大阪駅4番出口より徒歩4分 TEL: 06-6397-8011
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c706027493ab42cf8ffc85eee5aac83b = L.marker(
+                [34.692598, 135.501601],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_c706027493ab42cf8ffc85eee5aac83b.bindTooltip(
+                `<div>
+                     山口あきこクリニック  受付時間: 10:00~13:00 16:00~19:00 <br/>〒541-0041 大阪府大阪市中央区北浜３丁目１?21 淀屋橋駅徒歩1分 TEL : 06-6233-2300
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f52c14bead94f2a9ade5dad15d821c8 = L.marker(
+                [34.663106, 135.495974],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_4f52c14bead94f2a9ade5dad15d821c8.bindTooltip(
+                `<div>
+                     なかたこどもクリニック  受付時間: 09:00~12:00 15:00~18:00 <br/>〒556-0016 大阪府大阪市浪速区元町１丁目１３?9 なんば駅徒歩8分 TEL: 06-7710-6568
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f93c49ae070422dbe51c19913753c32 = L.marker(
+                [34.67564, 135.521638],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_3f93c49ae070422dbe51c19913753c32.bindTooltip(
+                `<div>
+                     さの赤ちゃんこどもクリニック  受付時間: 09:00~12:00 13:30~19:00 <br/>〒543-0011 大阪府大阪市天王寺区清水谷町５?22 3階 谷町六丁目駅徒歩8分 TEL:06-6765-8585
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_598bf2533c5a474fbfb07802a671c345 = L.marker(
+                [34.724295, 135.547466],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_598bf2533c5a474fbfb07802a671c345.bindTooltip(
+                `<div>
+                     しまだ循環器・糖尿病内科クリニック  受付時間: 09:00~12:00 16:00~19:00 <br/>〒535-0002 大阪府大阪市旭区大宮２丁目１７?14 アイリス千林大宮 3F  大阪メトロ 谷町線 千林大宮駅より徒歩3分 TEL:06-6958-5575
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d7d769d777e4bc79c3ac7e6f3b68a02 = L.marker(
+                [34.67357, 135.516165],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_2d7d769d777e4bc79c3ac7e6f3b68a02.bindTooltip(
+                `<div>
+                     もり内科皮膚科クリニック  受付時間: 09:00~12:30 16:00~19:00 <br/>〒542-0012 大阪府大阪市中央区谷町６丁目４?番14号 地下鉄「谷町六丁目駅」?番出口より徒歩2分 ?番出口より徒歩3分 TEL: 06-6767-0050
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07e4d8e55a0041739e43224b7d5b060d = L.marker(
+                [34.687033, 135.491026],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_07e4d8e55a0041739e43224b7d5b060d.bindTooltip(
+                `<div>
+                     江戸堀サンテクリニック  受付時間: 13:00~17:30 19:00~21:30 <br/>〒550-0002 大阪府大阪市西区江戸堀２丁目２?13 京阪中之島線「中之島駅」6番出口から徒歩9分 TEL : 06-6467-8833
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_702cfcf6651441479703cc1f4ee8faaf = L.marker(
+                [34.698496, 135.513892],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_702cfcf6651441479703cc1f4ee8faaf.bindTooltip(
+                `<div>
+                     ふくだあやレディースクリニック  受付時間: 10:00~13:00 15:00~18:00 <br/>〒530-0038 大阪府大阪市北区紅梅町１?6 カザリーノビル1階 JR東西線「大阪天満宮駅」下車。徒歩1分 TEL: 06-6354-0088
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af0ba1cb9d204468a61fb8c929dd21f1 = L.marker(
+                [34.738733, 135.517249],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_af0ba1cb9d204468a61fb8c929dd21f1.bindTooltip(
+                `<div>
+                     ごとう内科・消化器内科  受付時間: 09:00~12:00 17:00~19:00 <br/>〒533-0023 大阪府大阪市東淀川区東淡路４丁目１７?17 メディアン・イースト ３，４階 JRおおさか東線　JR淡路駅　より徒歩5分 TEL: 06-6195-5107
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_162d7028f8d54affb76ab2a7ffe24ab8 = L.marker(
+                [34.667868, 135.490682],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_162d7028f8d54affb76ab2a7ffe24ab8.bindTooltip(
+                `<div>
+                     桜川よしえクリニック  受付時間: 09:30~12:30 16:00~18:30 <br/>〒556-0022 大阪府大阪市浪速区桜川２丁目2-31 地下鉄千日前線「桜川駅」7番出口 TEL: 06-4392-8388 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b37e8a413774c57af813e3fb79ef000 = L.marker(
+                [34.705348, 135.521635],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_4b37e8a413774c57af813e3fb79ef000.bindTooltip(
+                `<div>
+                     すぎもと医院  受付時間: 09:00~12:30 17:00~20:00 <br/>〒534-0027 大阪府都島区 大阪市都島区３ 〒534-0027 ５丁目-３-１８ 中野町 JR大阪環状線桜ノ宮駅東口(北側)すぐ地下鉄 谷町線 都島駅 2番出口　徒歩8分 TEL: 06-6924-7077
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b63966e78bf14ae499cd4d23bdc74bdc = L.marker(
+                [34.659898, 135.533169],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_b63966e78bf14ae499cd4d23bdc74bdc.bindTooltip(
+                `<div>
+                     ゆきおかクリニック  受付時間: 09:00~18:00 <br/>〒544-0034 大阪府大阪市生野区桃谷２丁目１７?18 桃谷駅より徒歩8分 TEL: 06-6718-3939
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_613aad95a23e41599d848f753a7d76c8 = L.marker(
+                [34.699139, 135.498369],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_613aad95a23e41599d848f753a7d76c8.bindTooltip(
+                `<div>
+                     澤田内科医院  受付時間: 09:30~13:00 14:00~17:00 <br/>〒530-0001 大阪府大阪市北区梅田１丁目２?2 JR東西線「北新地駅」東出口すぐ TEL: 06?6343?1414
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebf60537f99c4f008f02550c9ef81c30 = L.marker(
+                [34.616735, 135.53384499999999],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_ebf60537f99c4f008f02550c9ef81c30.bindTooltip(
+                `<div>
+                     宮﨑医院  受付時間: 09:00~12:30 16:00~18:30 <br/>〒546-0011 大阪府大阪市東住吉区針中野３丁目１０?１０番２０号 ジュネスコート １階 近鉄南大阪線　針中野　徒歩2分 TEL: 06-4302-3588
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9a2350a93c44e9abf4bb8e36a441a41 = L.marker(
+                [34.697855, 135.49531299999998],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_d9a2350a93c44e9abf4bb8e36a441a41.bindTooltip(
+                `<div>
+                     プライベートスキンクリニック  受付時間: 10:30~19:30 <br/>〒530-0002 大阪府大阪市北区曾根崎新地２丁目１?21 桜橋深川ビル 5F JR東西線「北新地駅」徒歩2分 TEL: 06-6940-7101
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_811edd4733c142e4b3b0b80b6c1e935c = L.marker(
+                [34.646221000000004, 135.51066200000002],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_811edd4733c142e4b3b0b80b6c1e935c.bindTooltip(
+                `<div>
+                     みつば会総合クリニック  受付時間: 09:00~18:00 <br/>〒545-0052 大阪府大阪市阿倍野区阿倍野筋１丁目５?1 あべのルシアス B1F JR天王寺駅より徒歩5分 TEL: 06-6633-3636
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_207b43de707d4969a36faf70d500799d = L.marker(
+                [34.62355, 135.503998],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_207b43de707d4969a36faf70d500799d.bindTooltip(
+                `<div>
+                     すが内科クリニック  受付時間: 08:50~12:10 17:00~19:30 <br/>〒545-0037 大阪府大阪市阿倍野区帝塚山１丁目６?２７阪堺電気軌道上町線「姫松」駅徒歩約1分 TEL: 06-6625-0222
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df8264d93aaa4dc7bcdcc1d0542978b3 = L.marker(
+                [34.66444, 135.55040400000001],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_df8264d93aaa4dc7bcdcc1d0542978b3.bindTooltip(
+                `<div>
+                     井上医院  受付時間: 14:00~16:00 <br/>〒544-0001 大阪府大阪市生野区新今里４丁目１?８ 今里駅より徒歩2分 TEL: 070-1565-6538
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95a4f6b1e96b4095a3bceb2b7e6e5bb1 = L.marker(
+                [34.700077, 135.496193],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_95a4f6b1e96b4095a3bceb2b7e6e5bb1.bindTooltip(
+                `<div>
+                     大阪梅田こころのクリニック  受付時間: 11:00~14:00 16:00~20:00 <br/>〒530-0001 大阪府大阪市北区梅田１丁目８?番１６号 ヒルトンプラザイースト ５階 四つ橋線「西梅田」駅 北改札口より徒歩すぐ TEL: 06-6347-1560
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95b93d16e85b4e208eb596bfefbc956f = L.marker(
+                [34.704746, 135.459665],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_95b93d16e85b4e208eb596bfefbc956f.bindTooltip(
+                `<div>
+                     黒川診療所   受付時間: 10:30~20:00 <br/>〒555-0025 大阪府大阪市西淀川区姫里１丁目２２?２３ 姫島駅徒歩3分 TEL: 06-6647-0641
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_771982543e9a4bc8a680c44982ef48c7 = L.marker(
+                [34.703134000000006, 135.48566499999998],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_771982543e9a4bc8a680c44982ef48c7.bindTooltip(
+                `<div>
+                     愛和クリニック  受付時間: 09:30~13:00 17:00~19:30 <br/>〒531-0076 大阪府大阪市北区大淀中２丁目２?１３ JR環状線 福島駅　徒歩9 TEL: 06-6458-1571
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02b401ef269547e5bbb209ae73c0f9eb = L.marker(
+                [34.632805, 135.570055],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_02b401ef269547e5bbb209ae73c0f9eb.bindTooltip(
+                `<div>
+                     ミスミ診療所  受付時間: 09:30~11:45 17:30~18:45 <br/>〒547-0002 大阪府大阪市平野区加美東２丁目３?３ 新加美駅より徒歩11分。TEL: 06-6793-2826
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_818b14d89fec45679a38a334b5e682ce = L.marker(
+                [34.682905, 135.464992],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_818b14d89fec45679a38a334b5e682ce.bindTooltip(
+                `<div>
+                     よねだ内科・皮フ科  受付時間: 09:00~12:30 15:00~19:00 <br/>〒554-0012 大阪府大阪市此花区西九条４丁目３?３４ JR大阪環状線・阪神なんば線「西九条」駅より?徒歩約1分 TEL: 06-6466-1001
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0deb8507f359454eb218c2e9d3beb0cb = L.marker(
+                [34.665589000000004, 135.51879499999998],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_0deb8507f359454eb218c2e9d3beb0cb.bindTooltip(
+                `<div>
+                     藤谷クリニック  受付時間: 09:00~12:00 16:00~19:00 <br/>〒543-0001 大阪府大阪市天王寺区上本町６丁目３?３１ 近鉄上本町駅から 徒歩1分 TEL: 06-6771-5315
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53120ffecfe64495839052e11ae6f249 = L.marker(
+                [34.682311, 135.49581],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_53120ffecfe64495839052e11ae6f249.bindTooltip(
+                `<div>
+                     かおるレディースクリニック  受付時間: 10:00~13:00 16:00~18:00 <br/>〒550-0005 大阪府大阪市西区西本町１丁目１０?7 地下鉄本町駅24番出口を出てすぐ TEL: 06-6534-0035
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a68378fd0629423d819c050c26bdd554 = L.marker(
+                [34.741854, 135.497739],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_a68378fd0629423d819c050c26bdd554.bindTooltip(
+                `<div>
+                     池上メンタルクリニック  受付時間: 09:30~12:30 15:30~19:00 <br/>〒532-0002 大阪府大阪市淀川区東三国５丁目１?3 クカワビル 5F 地下鉄御堂筋線　【東三国駅】北出口「②」《改札を出て右手に進んで階段を下りる》から徒歩１分 TEL: 06-6391-1556 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1bc79b2d834c4b59a79d20ab523cf9b2 = L.marker(
+                [34.624221999999996, 135.49034699999999],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_1bc79b2d834c4b59a79d20ab523cf9b2.bindTooltip(
+                `<div>
+                     赤松内科クリニック  受付時間: 09:00~12:00 16:00~19:00 <br/>〒557-0045 大阪府大阪市西成区玉出西２丁目４?8 地下鉄四ツ橋線「玉出駅」5番出口より北へ徒歩約1分 TEL：06-6627-9906
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac07b7829c664531bc73ddfcd437aba9 = L.marker(
+                [34.707449, 135.496906],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_ac07b7829c664531bc73ddfcd437aba9.bindTooltip(
+                `<div>
+                     にしむら内科・糖尿病クリニック  受付時間: 10:00~13:00 15:00~18:00 <br/>〒530-0012 大阪府大阪市北区芝田１丁目１０?8 山中ビル 6F 阪急「梅田」駅より?徒歩約5分 TEL: 06-6375-4976
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_837a60970eda4c84874accab95dd40a3 = L.marker(
+                [34.683865999999995, 135.50144699999998],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_837a60970eda4c84874accab95dd40a3.bindTooltip(
+                `<div>
+                     ラ・クォール本町クリニック  受付時間: 10:00~13:00 14:30~18:30 <br/>〒541-0053 大阪府大阪市中央区本町３丁目５?2 地下鉄御堂筋線3番出入口（御堂筋本町ビル西側口）より本町通沿いの、1階が「三菱UFJ銀行」のビルの2階 TEL: 06-6271-5576
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35716e694bb54a5089a572378ac2f89b = L.marker(
+                [34.652411, 135.466077],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_35716e694bb54a5089a572378ac2f89b.bindTooltip(
+                `<div>
+                     笠井医院  受付時間: 09:00~12:00 15:30~18:30 <br/>〒551-0032 大阪府大阪市大正区大正区北村２丁目５?10 北恩加島バス停より徒歩１分 TEL: 06-4394-7026
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d5d6069736f4c79a20265e7dfb29085 = L.marker(
+                [34.635728, 135.496387],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_0d5d6069736f4c79a20265e7dfb29085.bindTooltip(
+                `<div>
+                     天下茶屋 あみ皮フ科クリニック  受付時間: 09:30~12:30 14:00~17:00 <br/>〒557-0041 大阪府大阪市西成区岸里１丁目１?4 大阪メトロ堺筋線　天下茶屋駅より徒歩1分 TEL : 06-6115-6665
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b91156e5afee4755998f438df0eeabb3 = L.marker(
+                [34.656038, 135.53223799999998],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_b91156e5afee4755998f438df0eeabb3.bindTooltip(
+                `<div>
+                     くぼたこどもクリニック   受付時間: 09:15~12:00 17:00~19:00 <br/>〒544-0033 大阪府大阪市生野区勝山北２丁目６?18 桃谷駅より徒歩7分 TEL: 06-7894-1100
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0544eaee0a8747388e501187dedb75be = L.marker(
+                [34.705622999999996, 135.49666299999998],
+                {}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            marker_0544eaee0a8747388e501187dedb75be.bindTooltip(
+                `<div>
+                     大阪梅田紳士クリニック  受付時間: 13:30~19:30 <br/>〒530-0012 大阪府大阪市北区芝田２丁目１?18 西阪急ビル B1F 大阪梅田駅徒歩3分 TEL: 06-6373-0404
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_935168c9e14b446b88ebaa8de03b8f93 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            var tile_layer_3644a5e9fd8b4dcc87c495508fb77345 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            var tile_layer_45c25fe25bc34fa8b159d08f50d5a853 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+        
+    
+            var layer_control_5e291e62638547bda2f958703d690c11 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_935168c9e14b446b88ebaa8de03b8f93,
+                    "stamenterrain" : tile_layer_3644a5e9fd8b4dcc87c495508fb77345,
+                    "stamentoner" : tile_layer_45c25fe25bc34fa8b159d08f50d5a853,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_5e291e62638547bda2f958703d690c11.base_layers,
+                layer_control_5e291e62638547bda2f958703d690c11.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_c32b9760643d4555b89911cbf598b4e6);
+            tile_layer_3644a5e9fd8b4dcc87c495508fb77345.remove();
+            tile_layer_45c25fe25bc34fa8b159d08f50d5a853.remove();
+        
+</script>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9" ></div>
+        
+</body>
+<script>    
+    
+            var map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9 = L.map(
+                "map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9",
+                {
+                    center: [34.6594, 135.4996],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0a39776db0c64142809b66a41b3d90a6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            var marker_d1ba14c63bef42a6a36686c188dce3d8 = L.marker(
+                [34.672945, 135.499944],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_d1ba14c63bef42a6a36686c188dce3d8.bindTooltip(
+                `<div>
+                     早川クリニック　診療時間:午前 9:30~12:40 午後 15:15~18:00(休診日:午前の水・日(祝) 午後の土・日(祝)) 院長:早川潤<br/> 住所:大阪府大阪市中央区西心斎橋1丁目4-5 御堂筋ビル5F 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f709dff52ea44d79bb36dfe421db5d6 = L.marker(
+                [34.622903, 135.506641],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_1f709dff52ea44d79bb36dfe421db5d6.bindTooltip(
+                `<div>
+                     柏原医院　診療時間:午前 9:00~11:30 午後 15:00~18:30(休診日:午前の木・日(祝) 午後の水・木・土・日(祝)) 院長:柏原 紀美 副院長の診療時間:午前 9:00~11:30 午後  15:00~18:30(午前の日(祝) 午後の水・土・日(祝)休診)<br/>住所：大阪府大阪市阿倍野区万代1丁目6-16 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7bb3756e5054c99bb427426c9c3acb9 = L.marker(
+                [34.698502000000005, 135.513895],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_d7bb3756e5054c99bb427426c9c3acb9.bindTooltip(
+                `<div>
+                     ふくだあやレディースクリニック　診療時間:午前10:00~13:00 午後:15:00~18:00(休診日:午前・午後の火 )院長:福田　綾(女医) <br/>住所:大阪府大阪市北区紅梅町1-6 カザリーノビル1階 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f91092adea904aebbbf8b00ad500493a = L.marker(
+                [34.659901, 135.533172],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_f91092adea904aebbbf8b00ad500493a.bindTooltip(
+                `<div>
+                     ゆきおかクリニック　診療時間:9:00~18:00(休診日:水・日(祝)) 院長:行岡 慶介 <br/>住所:大阪府大阪市生野区桃谷２丁目17-18 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84c61f07a086401ab865d9bb510a3a76 = L.marker(
+                [34.633452, 135.52946],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_84c61f07a086401ab865d9bb510a3a76.bindTooltip(
+                `<div>
+                     高畑産婦人科　診療時間:朝9:00~12:00 昼14:00~16:00 晩17:00~19:30 (休診日:朝 日(祝) 昼 月・水・金・日(祝) 晩 火・木・土・日(祝)) 院長:高畑 暁<br/> 住所:大阪市東住吉区駒川1-7-3 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc71a2fce6754e97ae74cfdd29800ae4 = L.marker(
+                [34.711869, 135.524972],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_cc71a2fce6754e97ae74cfdd29800ae4.bindTooltip(
+                `<div>
+                     川端産婦人科　診療時間:午前 9:30~12:00 午後14:00~18:30(休診日:火・水 )(土: 午後日:午前10:00~12:00 午後:13:00~15:00)院長:川端　和女(女医) <br/>住所:大阪府大阪市都島区善源寺町2-2-22　善源寺メディカルモール 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4db58be86ead457e9adafb75216a2ef3 = L.marker(
+                [34.709507, 135.511071],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_4db58be86ead457e9adafb75216a2ef3.bindTooltip(
+                `<div>
+                     天神橋ゆかこレディースクリニック　診療時間:午前 9:30~13:00 午後 15:00~18:00(休診日:午後 水・土 日(祝))院長:南 裕佳子(女医)<br/> 住所:大阪府大阪市北区天神橋6丁目6-11エレガントビル大阪2F 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_492882e0ad284d2e90d610046d108d2e = L.marker(
+                [34.630056, 135.526097],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_492882e0ad284d2e90d610046d108d2e.bindTooltip(
+                `<div>
+                     井口医院　診療時間:午前 9:30~12:00 午後17:00~19:00 (休診日:午前 日(祝) 午後 火・木・土・日(祝)) 院長:井口 正美(女医) <br/>住所:大阪府大阪市東住吉区北田辺６丁目１３?８ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_920076c8fe02452097043de8d07f3849 = L.marker(
+                [34.71996, 135.481158],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_920076c8fe02452097043de8d07f3849.bindTooltip(
+                `<div>
+                     ちはるクリニック　診療時間:朝 9:00~12:30 昼 15:00~17:00 晩17:00~18:00(晩17:00~18:00 昼 水は要予約) 土曜は11:00~17:00 (休診日:日(祝)) 木:15:00~17:00 院長と女性専門医の医師2人体制 院長:金森 千春<br/> 住所:大阪府大阪市淀川区十三本町2丁目1番26号十三NLCビル5F 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee128e23a74746be884d93ff27c50b7a = L.marker(
+                [34.691702, 135.483567],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_ee128e23a74746be884d93ff27c50b7a.bindTooltip(
+                `<div>
+                     大阪病院　診療時間:8:30~11:30 (休診日:土・日(祝)・年末年始) 女医による診察を希望者はあらかじめ受付まで 産婦人科主任部長:筒井　建紀<br/> 住所:大阪府大阪市福島区福島4丁目2-78 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b7f703096504e30b6f96e82e8629fe1 = L.marker(
+                [34.676929, 135.48591000000002],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_9b7f703096504e30b6f96e82e8629fe1.bindTooltip(
+                `<div>
+                     さゆり女性クリニック　診療時間:午前 9:00~12:00 午後 14:00~17:00 午前 水は9:00~14:00 (休診日 水 午後・木・土 午後・日(祝)) 院長:後安 聡子(女医) <br/>住所:大阪府大阪市西区新町4丁目6番23号阪急OASIS新町店2階 新町クリニックモール 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cea64a18c2a7481f9fdbcec50045dee7 = L.marker(
+                [34.682283, 135.484096],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_cea64a18c2a7481f9fdbcec50045dee7.bindTooltip(
+                `<div>
+                     日本生命病院　診療時間:(初診)午前 8:30~11:30 (診察 8:45~) (再診)午前7:45~11:30 (診察 8:45~) 午後 12:00~15:30 (診察 13:30~) (休診日:土・日(祝)) 産婦人科部長:橋本 奈美子<br/> 住所:大阪市西区江之子島2-1-54 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3fdd1ce9c194a9d8aa686e9b1feb9c7 = L.marker(
+                [34.728578000000006, 135.477022],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_e3fdd1ce9c194a9d8aa686e9b1feb9c7.bindTooltip(
+                `<div>
+                     大阪市立十三市民病院　診療時間:(初診)午前8:45~11:00 (再診)8:30~11:00 (休診日:土・日(祝)・年末年始)主任部長:康 文豪 <br/>住所:大阪市淀川区野中北2-12-27 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f20ba1470b79420187fe38df703a2b96 = L.marker(
+                [34.658668, 135.521251],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_f20ba1470b79420187fe38df703a2b96.bindTooltip(
+                `<div>
+                     大阪警察病院　診療時間:午前8:00~11:00 （受付機開始時間　7:40～）（外来受付開始時間　8:00～）（診察開始時間　9:00～）産婦人科担当部長:西尾 幸浩 <br/>住所:大阪市天王寺区北山町10-31 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3883e38a41a0486bbb4dd315aa5b17b3 = L.marker(
+                [34.700501, 135.443522],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_3883e38a41a0486bbb4dd315aa5b17b3.bindTooltip(
+                `<div>
+                     千船病院　診療時間:午前9:00~12:00(受付は8:30~17:00) 午後13:00~17:00(休診日:土・日(祝)・年末年始) 院長:吉井 勝彦 <br/>住所:大阪府大阪市西淀川区福町三丁目2番39号 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_316ceec02a044166b585f1ffae1e975c = L.marker(
+                [34.661432, 135.476565],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_316ceec02a044166b585f1ffae1e975c.bindTooltip(
+                `<div>
+                     大正病院付属産婦人科クリニック　診療時間:午前9:00~12:00 夜間17:00~19:00 夜間 第3.5木は女性医師が担当 (休診日:夜間 木・土　日(祝)) 院長:南条 亨 <br/>住所:大阪市大正区三軒家東4-6-8 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c35010b84c3b4b81a98c52b1b2b8dcf2 = L.marker(
+                [34.7297, 135.51174699999999],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_c35010b84c3b4b81a98c52b1b2b8dcf2.bindTooltip(
+                `<div>
+                     淀川キリスト教病院　診療時間:平日 9:00～17:00 / 土曜 9:00～12:00 (午後はすべて予約診)受付時間 月～土 8:00～11:00  産婦人科部長:丸尾　伸之<br/> 住所:大阪市東淀川区柴島1丁目7番50号 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8938aad56b1542849903032d772f3576 = L.marker(
+                [34.616656, 135.505477],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_8938aad56b1542849903032d772f3576.bindTooltip(
+                `<div>
+                     大阪急性期・総合医療センター　診療時間:初診 8:30～11:00平日（月曜～金曜） 予約者 8:20～17:30 (休診日:土・日(祝)・年末年始) 産婦人科担当部長:竹村　昌彦<br/> 住所:大阪市住吉区万代東3丁目1番56号 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c50723ee201a444fa13774256f196472 = L.marker(
+                [34.705290000000005, 135.506831],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_c50723ee201a444fa13774256f196472.bindTooltip(
+                `<div>
+                     北野病院　診療時間: 受付 8:45?11:30 (休診日:第2.4土・日(祝))　産婦人科 主任部長:樋口 壽宏　<br/>住所:大阪市北区扇町 2-4-20 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7396362537fe4a238a9588ab5bfb5581 = L.marker(
+                [34.65736, 135.50478999999999],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_7396362537fe4a238a9588ab5bfb5581.bindTooltip(
+                `<div>
+                     愛染橋病院　診療時間:初診 再診 午前8:30~11:00 午後:12:00~15:00 (休診日: 土 午後・日(祝)・年末年始)　産婦人科部長:早田 憲司　<br/>大阪府大阪市浪早区日本橋5丁目16-15 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51d7c47099bd46ada5597cfa517e325e = L.marker(
+                [34.697174, 135.513106],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_51d7c47099bd46ada5597cfa517e325e.bindTooltip(
+                `<div>
+                     南森町レディースクリニック　診療時間:午前10:00~13:00 午後 15:00~19:00 土/祝13:00まで (休診日:木・土午後・日)　院長：平井 光三<br/>　住所:大阪府大阪市北区天神橋2-5-25　若杉グランドビル 本館1階 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3540b904e3a4b5d98e135ab718833f8 = L.marker(
+                [34.646656, 135.508858],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_e3540b904e3a4b5d98e135ab718833f8.bindTooltip(
+                `<div>
+                     大阪市立大学医学部付属病院　診療時間:初診受付 8:45~10:30 受付 9:00~16:00 (休診日:土・日(祝)・年末年始)　病院長:平田　一人　<br/>住所:大阪市阿倍野区旭町1-5-7 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52063d6156b34ae0bfed935a038280cd = L.marker(
+                [34.664660999999995, 135.52549299999998],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_52063d6156b34ae0bfed935a038280cd.bindTooltip(
+                `<div>
+                     日本赤十字病院　診療時間:初診 平日 8:30~11:30  再診 予約外 平日8:00~11:45　予約 月~金 8:00~16:00　産婦人科主任部長:野々垣　多加史　<br/>住所:大阪府大阪市天王寺区筆ケ崎町５-３０ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7121079802a64f6a8483373ca4474756 = L.marker(
+                [34.738726, 135.523436],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_7121079802a64f6a8483373ca4474756.bindTooltip(
+                `<div>
+                     医誠会病院　診療時間:午前 8:00~12:00 午後 12:30~17:00 (休診日:日(祝)・年末年始)　病院長:松本 勝美　<br/>住所:大阪市東淀川区菅原6-2-25 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b824310ec6a4b5a8b4458f683f75796 = L.marker(
+                [34.679898, 135.51976100000002],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_5b824310ec6a4b5a8b4458f683f75796.bindTooltip(
+                `<div>
+                     大阪医療センター　診療時間:午後13:00~16:00 (休診日:土・日(祝)・年末年始)　産婦人科 科長:巽 啓司　<br/>住所:大阪市中央区法円坂2-1-14 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_61d21cc743fe427393a437e62722b006 = L.marker(
+                [34.708368, 135.555092],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_61d21cc743fe427393a437e62722b006.bindTooltip(
+                `<div>
+                     大阪府済生会中津病院　診療時間:月～金午前 9：00～12：00（受付は11：30まで）午後 13：00～15：00（予約診のみ）第1・3・5土午前 9：00～12：00（受付は11：30まで）(休診日:第1・3・5土 第2・4土・日(祝日)・12/31～1/3 ・5/30（創立記念日）)　産婦人科 部長:森山 明宏　<br/>住所:大阪府大阪市北区芝田2丁目10番39号 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b8018f69fc242dca393e847f8248203 = L.marker(
+                [34.663145, 135.524375],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_3b8018f69fc242dca393e847f8248203.bindTooltip(
+                `<div>
+                     聖バルナバ病院　診療時間:9：00～17：00（受付は8：30～15：30）(休診日:木・日(祝))　院長:常見 泰平<br/>　住所:大阪府大阪市天王寺区細工谷1-3-18 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4eb65295ae3c4da8b5cfa91b7da896e7 = L.marker(
+                [34.606297, 135.551159],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_4eb65295ae3c4da8b5cfa91b7da896e7.bindTooltip(
+                `<div>
+                     浜田病院　診療時間:午前月~土 午後 月・水 (休診日:午後 火・木・金・土　日(祝))(産科)午前月・水・金 午後 水　(婦人科) 午前 月・火・水・木・土 午後 水は女性医師が担当　院長:奥田 英人<br/>　住所:大阪市平野区瓜破1-6-9 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f54b13d667754d6e93c27c1440898f65 = L.marker(
+                [34.735531, 135.499644],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_f54b13d667754d6e93c27c1440898f65.bindTooltip(
+                `<div>
+                     斎藤女性クリニック　診療時間:午前9:30?13:00 午後16:00?19:00 土曜の診療は9:30～13:30 (休診日:木曜・土曜午後・日曜・祝日) 　院長:斉藤 淳子<br/>　住所:大阪市淀川区宮原1丁目6番1号新大阪ブリックビル2階 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1a4c83e90554b7195de063076df5f23 = L.marker(
+                [34.708627, 135.511704],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_a1a4c83e90554b7195de063076df5f23.bindTooltip(
+                `<div>
+                     川島産婦人科クリニック　診療時間:午前9:00～13:30 午後17:00～19:00 水の午前は女性医師が担当 (休 診 日:木曜午後・土曜午後・日曜・祝日)　院長:野村　裕<br/>　住所:大阪府大阪市北区天神橋5丁目5-23（天六東通り） 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1777366aa5a4e0caf72414557ade6ad = L.marker(
+                [34.7061, 135.49903],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_c1777366aa5a4e0caf72414557ade6ad.bindTooltip(
+                `<div>
+                     茶屋町レディースクリニック　診療時間:午前10:00～13:00 午後15:00～19:30 (休診日:日(祝日))　院長:奥 久人<br/>　住所:大阪府大阪市北区茶屋町2-19JPR茶屋町ビル4F 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe45fa346f5f400887bbbdaadee01287 = L.marker(
+                [34.698099, 135.546574],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_fe45fa346f5f400887bbbdaadee01287.bindTooltip(
+                `<div>
+                     金井産婦人科　診療時間:一般診療 09:00～11:30(月?水・金・土) (休診日:日曜・祝日・第3土曜日)　月・火・金・土は女性医師が担当　院長:金井 宏之<br/>　住所:大阪府大阪市城東区今福西1-2-8 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c2d3ca8a0c348bb9f9df25e02f83e56 = L.marker(
+                [34.669887, 135.506947],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_0c2d3ca8a0c348bb9f9df25e02f83e56.bindTooltip(
+                `<div>
+                     飯島病院　診療時間:午前9:00～13:00 午後17:00～20:00 水曜は女性医師が担当 (休診日:土曜日午後・日曜日・祝日)　院長:飯島康史<br/>　住所:大阪市中央区島之内2-15-4 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2215a5737d5b49eba3feed9f43532cba = L.marker(
+                [34.612223, 135.490929],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_2215a5737d5b49eba3feed9f43532cba.bindTooltip(
+                `<div>
+                     中川医院　診療時間:朝9：00 ? 12：30 昼14：00 ? 16：00(アンチエイジング外来) 夜間17：00 ? 19：00 (木・土(14:00~19:00)・日・祝)　院長:中川由美子<br/>　住所:大阪府大阪市住吉区東粉浜3丁目21-1 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c40d624421f432596c911e35283ee71 = L.marker(
+                [34.681778, 135.449573],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_3c40d624421f432596c911e35283ee71.bindTooltip(
+                `<div>
+                     鈴木産婦人科　診療時間:午前診 AM9:00～12:00 午後診 PM4:00～7:00(休診日:木 午後・土 午後・日・祝) 女医の診察(月曜日・水曜日・木曜日・金曜日・土曜日の午前 月曜日・金曜日の午後)　院長:鈴木 晋一郎<br/>　住所:大阪府大阪市此花区春日出北２丁目6-8 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76ef3e81f6f04774b45ba1423db05417 = L.marker(
+                [34.701319, 135.57686],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_76ef3e81f6f04774b45ba1423db05417.bindTooltip(
+                `<div>
+                     米田産婦人科　診療時間:9:00-12:00 17:00-19:00 (日曜・祝日休診)　院長:米田嘉次<br/>　住所:大阪市鶴見区諸口1-13-16　 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f1e2c53c178499282e2095211f81b83 = L.marker(
+                [34.638329, 135.497502],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_9f1e2c53c178499282e2095211f81b83.bindTooltip(
+                `<div>
+                     イワタ医院　診療時間:朝9:30~12:00 昼13:30~15:00 晩18:00~20:00 (休診:日日曜・祝日・木曜午後・土曜午後)　院長:岩田  以津子<br/>　 住所:大阪市西成区天下茶屋２丁目23-5 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_226fe427909f44fbb60c218dc8392689 = L.marker(
+                [34.644294, 135.523251],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_226fe427909f44fbb60c218dc8392689.bindTooltip(
+                `<div>
+                     奥野病院　診療時間:月～土 9：00 ～ 12：00 金曜のみ 17：00 ～ 19：00 (休診日:月 ～ 木・土曜 午後・日曜・祝日)　院長:奥野幸彦<br/>　住所:大阪市阿倍野区天王寺町北2-31-4 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_942d948ef68a4bffafc29b03ca2c3e83 = L.marker(
+                [34.62593, 135.555778],
+                {}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            marker_942d948ef68a4bffafc29b03ca2c3e83.bindTooltip(
+                `<div>
+                     植田産婦人科　診療時間:午前10:00～12:00 午後18:00～20:00(休診日:午後 火・木・土 日・祝)　院長:植田　嘉代子<br/>　住所:大阪府大阪市平野区平野宮町2丁目8-8 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_01a2ba6996b445dfaa7fefbf94eff2ba = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            var tile_layer_3ded2b7bf2e04ac8b7f03e0ab44d7330 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            var tile_layer_24b1e5bc57894e4f8846754caa5129ce = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+        
+    
+            var layer_control_02f9795de3d44c33b3682b0b0e05d204 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_01a2ba6996b445dfaa7fefbf94eff2ba,
+                    "stamenterrain" : tile_layer_3ded2b7bf2e04ac8b7f03e0ab44d7330,
+                    "stamentoner" : tile_layer_24b1e5bc57894e4f8846754caa5129ce,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_02f9795de3d44c33b3682b0b0e05d204.base_layers,
+                layer_control_02f9795de3d44c33b3682b0b0e05d204.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_a4bf1d0c3bdd4b35ae2bed8cdc9e8eb9);
+            tile_layer_3ded2b7bf2e04ac8b7f03e0ab44d7330.remove();
+            tile_layer_24b1e5bc57894e4f8846754caa5129ce.remove();
+        
+</script>

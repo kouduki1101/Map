@@ -2,7 +2,7 @@
     font-size: 30px;
     color: white;
     background: rgba(167, 164, 197, 1);
-    width:100%;
+    width: 100%;
 
 
 }
@@ -23,7 +23,6 @@
     background-position: 0 0, 16px 16px;
 
 }
-
 
 
 .news {
@@ -173,3 +172,13 @@
     margin: 0px 15px 0px 15px;
 
 }
+
+
+.resizeimage img {
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+

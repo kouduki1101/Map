@@ -2,24 +2,57 @@
 {% load bootstrap4 %}
 {% block content %}
 
-    <div class='container'>
-        <form class="form-signin" method='post'>{% csrf_token %}
-{#            <img class="mb-4" src="../static/svg/map.svg" alt="" width="72" height="72">　上手く表示されない#}
-            <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
-            {% if error %}
-            {{ error }}
-            {% endif %}
-            <label for="inputEmail" class="sr-only">Username</label>
-            <input type="text" id="inputEmail" class="form-control" placeholder="username" name="username_data" required
-                   autofocus>
-            <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password_data"
-                   required>
-            <div class="checkbox mb-3">
+    <div class="container-fluid">
+
+
+        <div class="row">
+
+
+            <div class="col-md-12 news">
+
+                新規登録画面
 
             </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
-        </form>
+
+
+        </div>
+
+
+        <div class="row">
+
+
+            <div class="col-md-12 gap">
+
+                <form class="form-signin" method='post'>{% csrf_token %}
+                    {#            <img class="mb-4" src="../static/svg/map.svg" alt="" width="72" height="72">　上手く表示されない#}
+                    <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
+                    {% if error %}
+                        {{ error }}
+                    {% endif %}
+                    <label for="inputEmail" class="sr-only">Username</label>
+                    <input type="text" id="inputEmail" class="form-control" placeholder="username" name="username_data"
+                           required
+                           autofocus>
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+                           name="password_data"
+                           required>
+                    <div class="checkbox mb-3">
+
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+                    <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+
+
+                    <a href="{% url 'Icon:login' %}">Login画面はこちら</a>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
     </div>
 {% endblock content %}

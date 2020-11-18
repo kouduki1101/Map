@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_86ef5200305346058e86ed1dbb9d6439 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_86ef5200305346058e86ed1dbb9d6439" ></div>
+        
+</body>
+<script>    
+    
+            var map_86ef5200305346058e86ed1dbb9d6439 = L.map(
+                "map_86ef5200305346058e86ed1dbb9d6439",
+                {
+                    center: [34.6594, 135.4996],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_37b19b5d84db489480409da0ab4e59c0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            var marker_b9f464cbef2643d8a2a0dd40475326d7 = L.marker(
+                [34.673826, 135.48633700000002],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_b9f464cbef2643d8a2a0dd40475326d7.bindTooltip(
+                `<div>
+                     中央図書館       開館時間: 09:15~20:30 <br/>〒550-0014 大阪市西区北堀江４丁目３番２号 Osaka Metro千日前線・長堀鶴見緑地線西長堀駅下車　７号出口すぐ  TEL: 06-6539-3300
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ad555766f3244e2bde50c14821e62a2 = L.marker(
+                [34.715810999999995, 135.508545],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_3ad555766f3244e2bde50c14821e62a2.bindTooltip(
+                `<div>
+                     北図書館       開館時間:火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00 <br/>〒531-0074 大阪市北区本庄東3丁目8番2号  シティバス天神橋八丁目下車すぐ TEL: 06-6375-0410
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1fa31caa2aa8475881eb025feee286b9 = L.marker(
+                [34.700878, 135.52798],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_1fa31caa2aa8475881eb025feee286b9.bindTooltip(
+                `<div>
+                     都島図書館       開館時間: 火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00 <br/>〒534-0027  大阪市都島区中野町2丁目16番25号  シティバス都島区役所前下車すぐ TEL: 06-6354-3229
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b8c9e723a2714701bf1fcf9e1d081428 = L.marker(
+                [34.691533, 135.473104],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_b8c9e723a2714701bf1fcf9e1d081428.bindTooltip(
+                `<div>
+                     福島図書館       開館時間: 火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00  <br/>〒553-0006 大阪市福島区吉野3丁目17番23号 Osaka Metro千日前線野田阪神駅7号出口から西方向に300メートル TEL: 06-6468-2336
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebbe37646dae4ce8a7cbe220b091d29a = L.marker(
+                [34.685860999999996, 135.45717],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_ebbe37646dae4ce8a7cbe220b091d29a.bindTooltip(
+                `<div>
+                     此花図書館       開館時間: 火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00  <br/>〒554-0014 大阪市此花区四貫島1丁目1番18号 阪神西大阪線千鳥橋駅下車 TEL: 06-6463-3463
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_184ae8a7190d4cd297dfc8d4aa8a90ae = L.marker(
+                [34.671585, 135.50796499999998],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_184ae8a7190d4cd297dfc8d4aa8a90ae.bindTooltip(
+                `<div>
+                     島之内図書館       開館時間: 火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00  <br/>〒542-0082 大阪市中央区島之内2丁目12番31号  Osaka Metro長堀橋駅6号出口から南東方向に300メートル  TEL: 06-6211-3645
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5ef2d270b5b4097bb1b549bc30cff33 = L.marker(
+                [34.667787, 135.458602],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_f5ef2d270b5b4097bb1b549bc30cff33.bindTooltip(
+                `<div>
+                     港図書館       開館時間:  火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00 <br/>〒552-0007 大阪市港区弁天2丁目1番5号  シティバス港区民センター前下車すぐ TEL: 06-6576-2346
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4856b81e204343b39e40f89b263c9727 = L.marker(
+                [34.650929999999995, 135.47216],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_4856b81e204343b39e40f89b263c9727.bindTooltip(
+                `<div>
+                     大正図書館       開館時間:  火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00 <br/>〒551-0003 大阪市大正区千島2丁目6番15号 ＪＲ大正駅、Osaka Metro大正駅よりシティバス大正区役所前下車すぐ TEL: 06-6552-1116
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06021c379ab64f5dad8c78d7bcdc03b5 = L.marker(
+                [34.661518, 135.522086],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_06021c379ab64f5dad8c78d7bcdc03b5.bindTooltip(
+                `<div>
+                     天王寺図書館       開館時間:  火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00  <br/>〒543-0037 大阪市天王寺区上之宮町4番47号  Osaka Metro谷町九丁目駅、近鉄大阪線上本町駅12号出口から南東方向に500メートル TEL: 06-6771-2840
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4cde4ed72bd4b22a6f3666253a0a5de = L.marker(
+                [34.658648, 135.496074],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_e4cde4ed72bd4b22a6f3666253a0a5de.bindTooltip(
+                `<div>
+                     浪速図書館       開館時間:  火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00 <br/>〒556-0015 大阪市浪速区敷津西1丁目5番23号 Osaka Metro大国町下車２号出口から北西方向に400メートル TEL: 06-6632-4946
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc2845883d044c19b33d8ec49cf0c0cb = L.marker(
+                [34.711348, 135.456213],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_bc2845883d044c19b33d8ec49cf0c0cb.bindTooltip(
+                `<div>
+                     西淀川図書館       開館時間:  火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00 <br/>〒555-0012 大阪市西淀川区御幣島1丁目2番10号 ＪＲ東西線御幣島駅1号出口すぐ TEL: 06-6474-7900
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40b134815fcb4b888ce02d19b0bb6501 = L.marker(
+                [34.716086, 135.481221],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_40b134815fcb4b888ce02d19b0bb6501.bindTooltip(
+                `<div>
+                     淀川図書館       開館時間:  火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00 <br/>〒532-0025 大阪市淀川区新北野1丁目10番14号 阪急十三駅西出口から南西方向に600メートル TEL: 06-6305-2346
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee5f580c8a1f482995ecb7ffe28f8a2f = L.marker(
+                [34.733908, 135.51976200000001],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_ee5f580c8a1f482995ecb7ffe28f8a2f.bindTooltip(
+                `<div>
+                     東淀川図書館       開館時間:  火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00 <br/>〒533-0023 大阪市東淀川区東淡路１丁目4番53号  阪急京都線・千里線淡路駅東出口から南方向に700メートル   TEL: 06-6323-5476
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13f1cb0b121343e383f7149f8cc31f07 = L.marker(
+                [34.668076, 135.54142099999999],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_13f1cb0b121343e383f7149f8cc31f07.bindTooltip(
+                `<div>
+                     東成図書館       開館時間:  火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00 <br/>〒537-0014 大阪市東成区大今里西3丁目2番17号  Osaka Metro千日前線･今里筋線今里駅2号出口から西方向に100メートル TEL: 06-6972-0727
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ffa7a0080034d15a89307164ba5dacf = L.marker(
+                [34.653124, 135.539757],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_5ffa7a0080034d15a89307164ba5dacf.bindTooltip(
+                `<div>
+                     生野図書館       開館時間:  火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00  <br/>〒544-0021 大阪市生野区勝山南4丁目7番11号  Osaka Metro千日前線今里駅よりシティバス大池橋下車　南西方向に200メートル  TEL: 06-6717-2381
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_85fc705dee414da59656166cbeb5e852 = L.marker(
+                [34.721297, 135.54244599999998],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_85fc705dee414da59656166cbeb5e852.bindTooltip(
+                `<div>
+                     旭図書館       開館時間:  火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00 <br/>〒535-0003 大阪市旭区中宮1丁目11番14号  シティバス旭区役所区民センター前下車すぐ、シティバス森小路下車西方向に500メートル  TEL: 06-6955-0307
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9f6919ef6c5440bb176ac4c5f657018 = L.marker(
+                [34.703188, 135.544835],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_a9f6919ef6c5440bb176ac4c5f657018.bindTooltip(
+                `<div>
+                     城東図書館       開館時間:  火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00 <br/>〒536-0005 大阪市城東区中央3丁目5番45号 Osaka Metro長堀鶴見緑地線・今里筋線「蒲生四丁目」駅下車、7号出口から北西方向に300メートル TEL: 06-6933-0350
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d244d8a604f5464faf501b527fe08ada = L.marker(
+                [34.704232, 135.57336899999999],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_d244d8a604f5464faf501b527fe08ada.bindTooltip(
+                `<div>
+                     鶴見図書館       開館時間:  火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00  <br/>〒538-0052 大阪市鶴見区横堤5丁目3番15号  Osaka Metro長堀鶴見緑地線横堤駅3・4号出口から北方向にすぐ  TEL: 06-6913-0772
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_977fd00205234f5cbed93cfb082a2b0f = L.marker(
+                [34.641005, 135.510558],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_977fd00205234f5cbed93cfb082a2b0f.bindTooltip(
+                `<div>
+                     阿倍野図書館       開館時間:  火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00 <br/>〒545-0052 大阪市阿倍野区阿倍野筋4丁目19番118号  Osaka Metro谷町線阿倍野駅6号出口から西方向にすぐ  TEL: 06-6656-1009
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0dac2b7ffad2449aa6c683f955e11418 = L.marker(
+                [34.606439, 135.474962],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_0dac2b7ffad2449aa6c683f955e11418.bindTooltip(
+                `<div>
+                     住之江図書館       開館時間:  火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00  <br/>〒559-0015 大阪市住之江区南加賀屋3丁目1番20号  Osaka Metro四つ橋線住之江公園駅3・4号出口400メートル  TEL: 06-6683-2788
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c27c947c28b4896bcf3754e532dc66b = L.marker(
+                [34.604839, 135.500727],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_2c27c947c28b4896bcf3754e532dc66b.bindTooltip(
+                `<div>
+                     住吉図書館       開館時間:  火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00  <br/>〒558-0041 大阪市住吉区南住吉3丁目15番57号  南海高野線「沢ノ町」駅東へ約４００ｍ  TEL: 06-6606-4946
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d783ba0114f6437a87f13e5e5f163519 = L.marker(
+                [34.620408000000005, 135.52754],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_d783ba0114f6437a87f13e5e5f163519.bindTooltip(
+                `<div>
+                     東住吉図書館       開館時間:  火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00  <br/>〒546-0032 大阪市東住吉区東田辺2丁目11番28号  Osaka Metro谷町線駒川中野駅下車、南西方向に700メートル  TEL: 06-6699-7000
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2fbb9467b93b4246a544f2997c0ca230 = L.marker(
+                [34.624379, 135.55937600000001],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_2fbb9467b93b4246a544f2997c0ca230.bindTooltip(
+                `<div>
+                     平野図書館       開館時間:  火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00  <br/>〒547-0043 大阪市平野区平野東1丁目8番2号  シティバス平野東１丁目下車すぐ  TEL: 06-6793-0881
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9643efac335d403ba5bd38e460294384 = L.marker(
+                [34.634570000000004, 135.49498],
+                {}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            marker_9643efac335d403ba5bd38e460294384.bindTooltip(
+                `<div>
+                     西成図書館       開館時間:  火曜日～金曜日 10:00~19:00 土曜日、日曜日、祝・休日 10:00~17:00  <br/>〒557-0041 大阪市西成区岸里1丁目1番50号  Osaka Metro四つ橋線岸里駅2号出口から東方向に100メートル  TEL: 06-6659-2346
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_5c705beb5d82442893cd6e73b3cf4796 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            var tile_layer_bb1ebae443e3485bb077af3ea99f0c77 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            var tile_layer_471932ea23f340b0a74e420588d177b9 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+        
+    
+            var layer_control_20de5e48864f4a4085775180d599fe23 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_5c705beb5d82442893cd6e73b3cf4796,
+                    "stamenterrain" : tile_layer_bb1ebae443e3485bb077af3ea99f0c77,
+                    "stamentoner" : tile_layer_471932ea23f340b0a74e420588d177b9,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_20de5e48864f4a4085775180d599fe23.base_layers,
+                layer_control_20de5e48864f4a4085775180d599fe23.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_86ef5200305346058e86ed1dbb9d6439);
+            tile_layer_bb1ebae443e3485bb077af3ea99f0c77.remove();
+            tile_layer_471932ea23f340b0a74e420588d177b9.remove();
+        
+</script>

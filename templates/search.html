@@ -4,62 +4,11 @@
 
     <body>
 
-
     <div class="row">
 
 
         <div class="col-md-12 header">
 
-            {#            <table>#}
-            {#                <tr>#}
-            {#                    <td>#}
-            {#                        <form>#}
-            {#                            <input type="submit" value="" class="home_btn">#}
-            {#                        </form>#}
-            {#                    </td>#}
-            {#                    <td>#}
-            {#                        <form>#}
-            {#                            <input type="submit" value="" class="zoom_btn">#}
-            {#                        </form>#}
-            {#                    </td>#}
-            {#                    <td>#}
-            {#                        <form>#}
-            {#                            <input type="submit" value="" class="search_btn">#}
-            {#                        </form>#}
-            {#                    </td>#}
-            {##}
-            {#                    <td>#}
-            {#                        <form>#}
-            {#                            <input type="submit" value="" class="edit_btn">#}
-            {#                        </form>#}
-            {#                    </td>#}
-            {##}
-            {##}
-            {#                    <td>#}
-            {#                        <form>#}
-            {#                            <input type="submit" value="" class="comment_btn">#}
-            {#                        </form>#}
-            {#                    </td>#}
-            {##}
-            {##}
-            {#                    <td>#}
-            {#                        <form>#}
-            {#                            <input type="submit" value="" class="fav_btn">#}
-            {#                        </form>#}
-            {#                    </td>#}
-            {##}
-            {#                    <td>#}
-            {#                        <div align="center" class="user">ユーザー名が入る</div>#}
-            {#                    </td>#}
-            {##}
-            {#                    <td>#}
-            {#                        <form>#}
-            {#                            <input type="submit" value="" class="account_btn">#}
-            {#                        </form>#}
-            {#                    </td>#}
-            {##}
-            {#                </tr>#}
-            {#            </table>#}
             <div id="container">
                 <div>
                     <form>
@@ -129,13 +78,6 @@
             <div class="col-md-8">
 
 
-                {#                <iframe id="inlineFrameExample"#}
-                {#                        title="Inline Frame Example"#}
-                {#                        width="300"#}
-                {#                        height="200"#}
-                {#                        src="test2.html">#}
-                {#                </iframe>#}
-
                 <iframe id="inlineFrameExample"
                         title="Inline Frame Example"
                         width=100%
@@ -163,14 +105,7 @@
                     </div>
 
 
-                    {#                        <div>#}
-                    {#                            <label for="lat">緯度</label>#}
-                    {#                            <input type="text" id="lat" name="lat" value="{{ lat }}">#}
-                    {#                        </div>#}
-                    {#                        <div>#}
-                    {#                            <label for="lon">経度</label>#}
-                    {#                            <input type="text" id="lon" name="lon" value="{{ lon }}">#}
-                    {#                        </div>#}
+
 
                     <input type="submit" value="送信する">
 
@@ -198,26 +133,14 @@
     <div class="row">
 
         <div class="col-md-12 footer">
-            {##}フッター
-            {##}
-            {#            <table border="1" width=100% cellspacing="0" cellpadding="5" bordercolor="#333333">#}
-            {#                <tr>#}
-            {#                    <th bgcolor="#EE0000"><font color="#FFFFFF">名称</font></th>#}
-            {#                    <th bgcolor="#EE0000" width="300"><font color="#FFFFFF">所在地</font></th>#}
-            {#                    <th bgcolor="#EE0000" width="200"><font color="#FFFFFF">緯度</font></th>#}
-            {#                    <th bgcolor="#EE0000" width="200"><font color="#FFFFFF">経度</font></th>#}
-            {#                    <th bgcolor="#EE0000" width="500"><font color="#FFFFFF">メモ</font></th>#}
-            {#                </tr>#}
-            {#                <tr>#}
-            {#                    <td bgcolor="#FFFFFF" align="right" nowrap>{{ name }}</td>#}
-            {#                    <td bgcolor="#FFFFFF" valign="top" width="300">{{ address }}</td>#}
-            {#                    <td bgcolor="#FFFFFF" valign="top" width="200">{{ lat }}</td>#}
-            {#                    <td bgcolor="#FFFFFF" valign="top" width="200">{{ lon }}</td>#}
-            {#                    <td bgcolor="#FFFFFF" valign="top" width="500">ここにメモ等情報が表示される</td>#}
-            {#                </tr>#}
-            {#            </table>#}
-            {##}
-            {##}
+
+            {% for key, value in my_data.items %}
+                <ul>
+                    <li>アイコン{{ key }} - {{ value }}</li>
+                </ul>
+            {% endfor %}
+
+
         </div>
 
     </div>

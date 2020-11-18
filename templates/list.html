@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+<head>
+    <title>みんなの健康生活地図</title>
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/maplist.css' %}">
+</head>
+
+
+<body>
+{% block content %}
+
+
+
+
+
+    <div class="tabs">
+        <input id="health" type="radio" name="tab_item" checked>
+        <label class="tab_item" for="health">健康</label>
+        <input id="life" type="radio" name="tab_item">
+        <label class="tab_item" for="life">生活</label>
+        <input id="other" type="radio" name="tab_item">
+        <label class="tab_item" for="other">関西SDGs</label>
+
+
+
+        {% for post in posts %}
+            {% if "health" in post.category %}
+                <div class="tab_content" id="health_content">
+                    <div class="post">
+
+                        <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                        <p>{{ post.text|linebreaksbr }}</p>
+
+                    </div>
+                </div>
+            {% elif "life" in post.category %}
+                <div class="tab_content" id="life_content">
+                    <div class="post">
+                        <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                        <p>{{ post.text|linebreaksbr }}</p>
+                    </div>
+                </div>
+
+            {% else %}
+                <div class="tab_content" id="other_content">
+                    <div class="post">
+                        <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                        <p>{{ post.text|linebreaksbr }}</p>
+                    </div>
+                </div>
+
+            {% endif %}
+        {% endfor %}
+
+
+    </div>
+
+
+{% endblock %}
+
+</body>
+
+
+
+
+

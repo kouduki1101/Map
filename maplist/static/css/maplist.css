@@ -1,0 +1,149 @@
+.page-header {
+    background-color: #9089d8;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+    text-align: center;
+
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 0px;
+    width: 100%;
+    background-color: #9089d8;
+}
+
+h1, h2, h3, h4 {
+    font-family: "YuGothic", "Yu Gothic", "Meiryo", "ヒラギノ角ゴ", "sans-serif";
+
+}
+
+.date {
+    color: #ffffff;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #277abf;
+    float: right;
+    font-size: 26pt;
+    margin-right: 0px;
+}
+
+.post {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.post h2 a, .post h2 a:visited {
+    color: #ffffff;
+
+}
+
+.post {
+    background: #a7a4c5;
+    color: #ffffff;
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.post_detail {
+    background: #a7a4c5;
+    color: #ffffff;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+
+}
+
+.class {
+    text-align: center;
+    color: #ffffff;
+}
+
+
+button.button3 {
+    font-size: 1.4em;
+    font-weight: bold;
+
+    background-color: #248;
+    color: #fff;
+    margin-left: 20px;
+
+}
+
+/*タブ切り替え全体のスタイル*/
+.tabs {
+    margin-top: 50px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*タブのスタイル*/
+.tab_item {
+    width: calc(100% / 3);
+    height: 50px;
+    border-bottom: 3px solid #5ab4bd;
+    background-color: #d9d9d9;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: #565656;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.tab_item:hover {
+    opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+    display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+    display: none;
+    padding: 40px 40px 0;
+    clear: both;
+    overflow: hidden;
+}
+
+
+/*選択されているタブのコンテンツのみを表示*/
+#health:checked ~ #health_content,
+#life:checked ~ #life_content,
+#other:checked ~ #other_content {
+    display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {
+    background-color: #5ab4bd;
+    color: #fff;
+}

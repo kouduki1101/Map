@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_11a534f582e740c5bb4fb08332f8d1de {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_11a534f582e740c5bb4fb08332f8d1de" ></div>
+        
+</body>
+<script>    
+    
+            var map_11a534f582e740c5bb4fb08332f8d1de = L.map(
+                "map_11a534f582e740c5bb4fb08332f8d1de",
+                {
+                    center: [34.6594, 135.4996],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_11c33dce665a4bbebc10dd55ab2d94df = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_11a534f582e740c5bb4fb08332f8d1de);
+        
+    
+            var marker_1448b67f27fd4a958ed02f9b8c4361fb = L.marker(
+                [34.638036, 135.414668],
+                {}
+            ).addTo(map_11a534f582e740c5bb4fb08332f8d1de);
+        
+    
+            marker_1448b67f27fd4a958ed02f9b8c4361fb.bindTooltip(
+                `<div>
+                     大阪産業経済リサーチセンター　事業内容:大阪の産業・経済の発展と中小企業の振興を図るために、経済・経営に関する各種の調査を実施しています。これらの調査研究の成果を広く普及するとともに、大阪府の施策に反映させることを通じて、中小企業等を支援しています。<br/>　住所:大阪市住之江区南港北１丁目14-16 大阪府咲洲庁舎（さきしまコスモタワー）24階 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33185bdd3634409bb2038f882760dabf = L.marker(
+                [34.692170000000004, 135.517014],
+                {}
+            ).addTo(map_11a534f582e740c5bb4fb08332f8d1de);
+        
+    
+            marker_33185bdd3634409bb2038f882760dabf.bindTooltip(
+                `<div>
+                     学校法人重里学園 日本分析化学専門学校　理念:日本分析化学専門学校は、専修学校として分析化学の知識と技術を教授する上で、地球環境保全に努めることが、人類の果たすべき使命であることを自覚する。全ての本校内の教育活動は、環境への配慮の下で実施する。<br/>　住所:講義棟大阪市北区天満2丁目1番1号 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87a5b33228434a44a2643536a2f950bb = L.marker(
+                [34.702335, 135.500148],
+                {}
+            ).addTo(map_11a534f582e740c5bb4fb08332f8d1de);
+        
+    
+            marker_87a5b33228434a44a2643536a2f950bb.bindTooltip(
+                `<div>
+                     立命館　大阪梅田キャンパス　内容:地域と連携したり、子供たちの安全な暮らしを実現するためにと様々な活動をしている<br/>　住所:大阪市北区小松原町2-4 大阪富国生命ビル5階・14階 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e0134ad480b40ee8b31732868053d79 = L.marker(
+                [34.592273999999996, 135.505143],
+                {}
+            ).addTo(map_11a534f582e740c5bb4fb08332f8d1de);
+        
+    
+            marker_1e0134ad480b40ee8b31732868053d79.bindTooltip(
+                `<div>
+                     公立大学法人　大阪市立大学　理念:教育の基本方針、研究の基本方針、人材育成の目標像　<br/>住所:大阪市住吉区杉本3-3-138 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b41f9f17e2f4a269ce588e8751d2aa6 = L.marker(
+                [34.661528000000004, 135.500194],
+                {}
+            ).addTo(map_11a534f582e740c5bb4fb08332f8d1de);
+        
+    
+            marker_2b41f9f17e2f4a269ce588e8751d2aa6.bindTooltip(
+                `<div>
+                     学校法人エール学園　理念:多くの皆様方に貸し教室、貸室としても利用頂いております。各種カルチャー講座、試験会場、セミナー会場の他、町内会の会合等にご利用を<br/>　住所:大阪市浪速区難波中3-13-1 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42a78714bca44c67a5a48b27c4cf6c3c = L.marker(
+                [34.688254, 135.492389],
+                {}
+            ).addTo(map_11a534f582e740c5bb4fb08332f8d1de);
+        
+    
+            marker_42a78714bca44c67a5a48b27c4cf6c3c.bindTooltip(
+                `<div>
+                     学校法人　創造社学園　創造社リカレントスクール　理念:DGsのグローバル・パートナーとして、誰もが活躍できる社会に必要不可欠な教育機会をすべての人に提供することで日本政府が掲げる「一億総活躍社会」を実現していきます。<br/>　住所:大阪府大阪市西区江戸堀1-25-15 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_791cd282c32d4319bafeb9422f94967d = L.marker(
+                [34.640279, 135.515245],
+                {}
+            ).addTo(map_11a534f582e740c5bb4fb08332f8d1de);
+        
+    
+            marker_791cd282c32d4319bafeb9422f94967d.bindTooltip(
+                `<div>
+                     辻調理師専門学校　理念:人生を豊かにすることのできる「食」の素晴らしさを伝え、食文化の発展に貢献していきます。<br/>　住所:大阪市阿倍野区松崎町3-16-11 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a1aacebdfeb470183f773ffcc1c2e17 = L.marker(
+                [34.706309000000005, 135.50099699999998],
+                {}
+            ).addTo(map_11a534f582e740c5bb4fb08332f8d1de);
+        
+    
+            marker_9a1aacebdfeb470183f773ffcc1c2e17.bindTooltip(
+                `<div>
+                     関西大学　理念:「学の実化（がくのじつげ）」を学是（理念）として掲げ、教育研究活動を展開しています。<br/>　住所:大阪府大阪市北区鶴野町1番5号 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f457a5ef58da4c65800524083e560e9a = L.marker(
+                [34.708533, 135.498556],
+                {}
+            ).addTo(map_11a534f582e740c5bb4fb08332f8d1de);
+        
+    
+            marker_f457a5ef58da4c65800524083e560e9a.bindTooltip(
+                `<div>
+                     学校法人 関西学院　内容:「研究」「教育」「経営」の3つの観点からSDGsの達成をめざし、各種取り組みを推進しています。<br/>　住所:大阪府大阪市北区茶屋町19-19　アプローズタワー10階、14階 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5c9cc0caffe455fb0f2721fda697b16 = L.marker(
+                [34.651191, 135.588368],
+                {}
+            ).addTo(map_11a534f582e740c5bb4fb08332f8d1de);
+        
+    
+            marker_c5c9cc0caffe455fb0f2721fda697b16.bindTooltip(
+                `<div>
+                     学校法人 近畿大学　内容:地域と連携したり、復興支援したりと様々な社会貢献をしている。<br/>　住所:大阪府東大阪市小若江3-4-1 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a052d462d4e46ea9c75a9c1b1d2799e = L.marker(
+                [34.760463, 135.626959],
+                {}
+            ).addTo(map_11a534f582e740c5bb4fb08332f8d1de);
+        
+    
+            marker_8a052d462d4e46ea9c75a9c1b1d2799e.bindTooltip(
+                `<div>
+                     大阪電気通信大学　内容:「エレクトロニクス基礎研究所」、「メカトロニクス基礎研究所」、「先端マルチメディア合同研究所」、「情報学研究所」、「メディアコミュニケーションセンター」、「衛星通信研究施設」などを設置し、社会との連携をはかりながら活発な先端的研究活動を推進しています　<br/>住所:大阪府寝屋川市初町18-8 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_970c1785f590424a81b93cb848c7e255 = L.marker(
+                [34.779658000000005, 135.61191599999998],
+                {}
+            ).addTo(map_11a534f582e740c5bb4fb08332f8d1de);
+        
+    
+            marker_970c1785f590424a81b93cb848c7e255.bindTooltip(
+                `<div>
+                     摂南大学　内容:地域社会のニーズを踏まえた「知の拠点」として地方公共団体や企業等と連携し、研究支援・社会連携センターが窓口となって「まちづくり（地域振興）」「モノづくり（産業振興）」「ひとづくり（人材育成）」を推進しています。<br/>　住所:大阪府寝屋川市池田中町17-8 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_0642da66c2124ac3b781eed443140b36 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_11a534f582e740c5bb4fb08332f8d1de);
+        
+    
+            var tile_layer_5b2faa4ebf2e4b49834a78abd5101ca8 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_11a534f582e740c5bb4fb08332f8d1de);
+        
+    
+            var tile_layer_ecfc9ae1c77e4c6bab1c4face833f4ae = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_11a534f582e740c5bb4fb08332f8d1de);
+        
+    
+            var layer_control_88707870fc2d476dae99539acb68ec47 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0642da66c2124ac3b781eed443140b36,
+                    "stamenterrain" : tile_layer_5b2faa4ebf2e4b49834a78abd5101ca8,
+                    "stamentoner" : tile_layer_ecfc9ae1c77e4c6bab1c4face833f4ae,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_88707870fc2d476dae99539acb68ec47.base_layers,
+                layer_control_88707870fc2d476dae99539acb68ec47.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_11a534f582e740c5bb4fb08332f8d1de);
+            tile_layer_5b2faa4ebf2e4b49834a78abd5101ca8.remove();
+            tile_layer_ecfc9ae1c77e4c6bab1c4face833f4ae.remove();
+        
+</script>

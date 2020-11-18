@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2f0ea2fce24e4364a3268cfb21723673 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2f0ea2fce24e4364a3268cfb21723673" ></div>
+        
+</body>
+<script>    
+    
+            var map_2f0ea2fce24e4364a3268cfb21723673 = L.map(
+                "map_2f0ea2fce24e4364a3268cfb21723673",
+                {
+                    center: [34.687455, 135.489296],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_db5b3b2bd0d44807a8e9d6b5ecaf76e7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            var marker_89e708d9792549f5a7b3136c4a224f68 = L.marker(
+                [34.699018, 135.49119199999998],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_89e708d9792549f5a7b3136c4a224f68.bindTooltip(
+                `<div>
+                     大阪中央病院       受付時間: 08:30～11:30  12:30～15:00  <br/>JR福島駅・阪神福島駅から徒歩約５分 予約サイト:  http://www.osaka-centralhp.jp/kenkan/web_kensin.html
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b360bd878a6346fcb40921071a48db99 = L.marker(
+                [34.73868, 135.523429],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_b360bd878a6346fcb40921071a48db99.bindTooltip(
+                `<div>
+                     医誠会病院       受付時間: 08:00～12:00  12:30～17:00  <br/> 阪急「大阪梅田」から阪急京都線「淡路」下車徒歩約  予約サイト: http://www.iseikaihp.or.jp/visit/yoyaku/index.html
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6acddb92de2c475998bdb6612ffec967 = L.marker(
+                [34.676833, 135.485972],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_6acddb92de2c475998bdb6612ffec967.bindTooltip(
+                `<div>
+                     みよし眼科       受付時間: 09:00～12:00  15:30～18:30 <br/> Osaka Metro 千日前線4A出口より徒歩約２分 予約サイト: http://0774-miyoshiganka.aa0.netvolante.jp/
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_440bdef41c5149fe89ef6c43216dd84f = L.marker(
+                [34.60215, 135.514623],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_440bdef41c5149fe89ef6c43216dd84f.bindTooltip(
+                `<div>
+                     くろやま内科・   在宅クリニック       受付時間: 09:00~17:00 <br/> 大阪メトロ御堂筋線あびこ駅 1番出口より徒歩5分 予約サイト : https://www.489map.com/helios/A0202748/reserve
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19238715a2cf45008034d32255dec1f1 = L.marker(
+                [34.673001, 135.499922],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_19238715a2cf45008034d32255dec1f1.bindTooltip(
+                `<div>
+                     心斎橋ペインクリニック       受付時間: 09:30~13:30  15:00~18:30 14:30~18:00 <br/> 心斎橋駅より徒歩1分 予約サイト: https://osaka-pain.mdja.jp/
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ff055f9211d431196a8df1159ea8f71 = L.marker(
+                [34.73973, 135.505628],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_8ff055f9211d431196a8df1159ea8f71.bindTooltip(
+                `<div>
+                     おおはらクリニック       受付時間: 09:00-12:00 17:00-19:00 <br/> JR東淀川駅より徒歩1分 予約サイト: https://www.489map.com/helios/A3592869/reserve/syoshin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0bb276de0cd4de6b6c2b0978ae4f414 = L.marker(
+                [34.613323, 135.505031],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_f0bb276de0cd4de6b6c2b0978ae4f414.bindTooltip(
+                `<div>
+                     ふくだレディースクリニック       受付時間: 09:30?01:30 15:00?18:30 <br/> 長居駅より徒歩11分 予約サイト: https://clinics.medley.life/clinics/5b1f38267e26603fafb6db41
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21f05cd268a343bb8544a5754f188ba0 = L.marker(
+                [34.67699, 135.485925],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_21f05cd268a343bb8544a5754f188ba0.bindTooltip(
+                `<div>
+                     やだクリニック       受付時間: 09:00~12:30 16:00~19:00  <br/> 地下鉄長堀鶴見緑地線・千日前線「西長堀駅」4A・4C出口より徒歩約1分 予約サイト : https://clinics.medley.life/clinics/5ee35528a5a95f17282b46d3                                                               
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d3d2cf62a7f642e2a3a33341bd41dadd = L.marker(
+                [34.671802, 135.493547],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_d3d2cf62a7f642e2a3a33341bd41dadd.bindTooltip(
+                `<div>
+                     いとう消化器クリニック       受付時間 09:00~12:30  16:00~18:30 <br/> なんば駅26番C出口から徒歩8分 予約サイト : https://www.489map.com/helios/A1061114/reserve/syoshin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58a702958aff4d79abbbc76e33946577 = L.marker(
+                [34.723038, 135.489335],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_58a702958aff4d79abbbc76e33946577.bindTooltip(
+                `<div>
+                     うえだクリニック        受付時間: 09:00~12:00 16:00~18:30 <br/> 大阪市営バス93番系統「木川西二丁目」バス停下車、徒歩1分 予約サイト : https://ssc5.doctorqube.com/w-uedaclinic/                                                                   
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e379ef8d33d43ddac0f682c941537d4 = L.marker(
+                [34.687455, 135.489296],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_8e379ef8d33d43ddac0f682c941537d4.bindTooltip(
+                `<div>
+                     すぎた内科クリニック       受付時間: 09:00~12:30 17:00~19:30 <br/> 京阪　中之島駅　徒歩6分 予約サイト: https://www.489map.com/helios/A4415923/reserve/syoshin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f82661ef5114add8e3c02d456cf9880 = L.marker(
+                [34.700041, 135.49511299999998],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_6f82661ef5114add8e3c02d456cf9880.bindTooltip(
+                `<div>
+                     北中レディースクリニック       受付時間: 11:00~13:30 15:00~20:00 <br/> 地下鉄四つ橋線「西梅田」駅 徒歩１分 予約サイト: https://www.489map.com/helios/A6720211/reserve/syoshin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c60c89f630a04304be149da254c6ced2 = L.marker(
+                [34.733969, 135.49576499999998],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_c60c89f630a04304be149da254c6ced2.bindTooltip(
+                `<div>
+                     のぞみハートクリニック       受付時間: 10:00~13:00 16:00~19:00 <br/> 新大阪駅4番出口より徒歩4分 予約サイト: https://nozomi-heartclinic.com/online/
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0cdf7eb4a64d435cb9febe7ab0944865 = L.marker(
+                [34.679973, 135.533889],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_0cdf7eb4a64d435cb9febe7ab0944865.bindTooltip(
+                `<div>
+                     希望の森成長発達クリニック       受付時間: 09:00~12:00 15:00~19:00 <br/> JR森ノ宮駅　南口改札から南下いただき、KOHYO様前のエレベータから3階にお上がり下さい。予約サイト: https://www.489map.com/helios/A6006162/reserve/syoshin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b2f253bbba14098ac20da00d4a14f5b = L.marker(
+                [34.672946, 135.499943],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_7b2f253bbba14098ac20da00d4a14f5b.bindTooltip(
+                `<div>
+                     早川クリニック       受付時間: 09:30~12:40  15:15~18:00 <br/> 大阪メトロ御堂筋線･長堀鶴見緑地線「心斎橋駅」7番出口より徒歩1分 予約サイト:  https://a.atlink.jp/hayakawa-cl/
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_779757f38e6e49719539bf629444381d = L.marker(
+                [34.621340999999994, 135.530706],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_779757f38e6e49719539bf629444381d.bindTooltip(
+                `<div>
+                     天野整形外科       受付時間: 08:50~12:00 16:00~19:00 <br/> 大阪メトロ･谷町線「駒川中野」駅より徒歩約3分 与薬サイト: https://www.489map.com/helios/A2772730/reserve
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95fbcdb4c543441bbab3fe17793bd599 = L.marker(
+                [34.608837, 135.48146599999998],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_95fbcdb4c543441bbab3fe17793bd599.bindTooltip(
+                `<div>
+                     かつらぎクリニック       受付時間: 09:00~12:00 16:00~18:30 <br/> 住之江通り沿い  予約サイト : https://www.489map.com/helios/A5599309/reserve 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a37e708410e64beaa08322ff689f5fbd = L.marker(
+                [34.606243, 135.51318500000002],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_a37e708410e64beaa08322ff689f5fbd.bindTooltip(
+                `<div>
+                     いわがき内科クリニック       受付時間: 09:00~12:00 15:00~18:00 <br/> 我孫子町駅より徒歩約10分 予約サイト: https://www.489map.com/helios/A0881379/reserve/syoshin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_698bdc90d7c74986abaafb2223e90fb3 = L.marker(
+                [34.692598, 135.501601],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_698bdc90d7c74986abaafb2223e90fb3.bindTooltip(
+                `<div>
+                     山口あきこクリニック       受付時間: 10:00~13:00 16:00~19:00 <br/> 淀屋橋駅徒歩1分　予約サイト: https://www.489map.com/helios/A1652505/reserve/stop/syoshin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_598a2192364a4af1945e22ee813fdb3c = L.marker(
+                [34.648629, 135.516844],
+                {}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            marker_598a2192364a4af1945e22ee813fdb3c.bindTooltip(
+                `<div>
+                     西下胃腸病院       受付時間: 09:00~12:30 16:15~18:00 <br/> JR関西本線／JR環状線・天王寺駅北口より徒歩3分 予約サイト:https://www.489map.com/helios/A9319794/reserve/stop/syoshin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_53a13fabd13c4b2487537a75cbd48ea9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            var tile_layer_b01c64df842e4a709fb2bbf966f08c7d = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            var tile_layer_1e278e38b8fa4fcd9a882c7bc7a7c339 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+        
+    
+            var layer_control_519af37bfa1645548f90f295d63c0007 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_53a13fabd13c4b2487537a75cbd48ea9,
+                    "stamenterrain" : tile_layer_b01c64df842e4a709fb2bbf966f08c7d,
+                    "stamentoner" : tile_layer_1e278e38b8fa4fcd9a882c7bc7a7c339,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_519af37bfa1645548f90f295d63c0007.base_layers,
+                layer_control_519af37bfa1645548f90f295d63c0007.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_2f0ea2fce24e4364a3268cfb21723673);
+            tile_layer_b01c64df842e4a709fb2bbf966f08c7d.remove();
+            tile_layer_1e278e38b8fa4fcd9a882c7bc7a7c339.remove();
+        
+</script>

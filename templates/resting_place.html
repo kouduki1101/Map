@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7669a32091444784b87c92b9e8432709 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7669a32091444784b87c92b9e8432709" ></div>
+        
+</body>
+<script>    
+    
+            var map_7669a32091444784b87c92b9e8432709 = L.map(
+                "map_7669a32091444784b87c92b9e8432709",
+                {
+                    center: [34.6594, 135.4996],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1420cd156df04eeaa0dd288529d2987d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            var marker_c2a23a969aa64525a672e6418a1cbb7b = L.marker(
+                [34.691904, 135.509346],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_c2a23a969aa64525a672e6418a1cbb7b.bindTooltip(
+                `<div>
+                     中之島公園　開園時間:常時開園<br/>　面積10.6haの緑あふれる都心のオアシス　売店:あり　住所:大阪府大阪市北区中之島１丁目１ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66c3d8b746a648c3a1737ad2c55e1de6 = L.marker(
+                [34.685148, 135.49411],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_66c3d8b746a648c3a1737ad2c55e1de6.bindTooltip(
+                `<div>
+                     靱公園　開園時間:常時開園<br/>　総面積9.7haの細長い形　売店:あり　6面のテニスコートを有し、国際大会にも利用できる靱テニスセンターがある　住所:大阪府大阪市西区靱本町２丁目１?４ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c42e849962f4c1cb46459d37716992c = L.marker(
+                [34.681053999999996, 135.495537],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_2c42e849962f4c1cb46459d37716992c.bindTooltip(
+                `<div>
+                     新阿波座公園　開園時間:常時開園<br/>　ベンチ:あり　周辺にコンビニ:あり　住所:大阪府大阪市西区阿波座１丁目８ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07f01a9e0b1b40ceb59d6198ef6f41d6 = L.marker(
+                [34.676377, 135.492828],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_07f01a9e0b1b40ceb59d6198ef6f41d6.bindTooltip(
+                `<div>
+                     新町南公園　開園時間:常時開園<br/>　面積:1ha　ベンチ:あり　広い芝生もあり、噴水もある　園内自動販売機あり　住所:大阪府松原市南新町３丁目１１-１４ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f5bfc255a684c64abb6e8ec192e9864 = L.marker(
+                [34.678072, 135.495049],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_5f5bfc255a684c64abb6e8ec192e9864.bindTooltip(
+                `<div>
+                     新町北公園　開園時間:常時開園<br/>　時計、ベンチ、ごみ箱あり　周辺にコンビニあり　住所:大阪府大阪市西区新町１丁目１５ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef3d01026aa44a52a2f061d87be402ba = L.marker(
+                [34.679784000000005, 135.491737],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_ef3d01026aa44a52a2f061d87be402ba.bindTooltip(
+                `<div>
+                     阿波座南公園　開園時間:常時開園<br/>　時計、ベンチあり　ビオトープあり　周辺に自動販売機、コンビニあり　住所:大阪府大阪市西区立売堀２丁目２ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00a4b370e0e74bf2b4252404b9dfecb3 = L.marker(
+                [34.686056, 135.495836],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_00a4b370e0e74bf2b4252404b9dfecb3.bindTooltip(
+                `<div>
+                     靱公園 四ッ橋筋側 広場　開園時間:常時開園<br/>　時計、ベンチ:多数、トイレ2か所あり　周辺にコンビニ、飲食店あり　住所:大阪府大阪市西区靱本町１丁目９ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65fab22f8b6e4f78b92b74419f9e38f9 = L.marker(
+                [34.680224, 135.502818],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_65fab22f8b6e4f78b92b74419f9e38f9.bindTooltip(
+                `<div>
+                     久宝公園　開園時間:常時開園<br/>　ベンチ、水道あり　周辺にコンビニ、カフェあり　住所:大阪府大阪市中央区北久宝寺町３丁目１ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70926124f0974b8fbac6ce123e4dfb29 = L.marker(
+                [34.701305, 135.506979],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_70926124f0974b8fbac6ce123e4dfb29.bindTooltip(
+                `<div>
+                     野崎公園　開園時間:常時開園<br/>　ベンチ、時計、ごみ箱あり　周辺にコンビニ、スーパーあり　住所:大阪府大阪市北区野崎町１?１６ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7808e86563794b889f03a9d64352cf7e = L.marker(
+                [34.703976000000004, 135.509066],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_7808e86563794b889f03a9d64352cf7e.bindTooltip(
+                `<div>
+                     扇町公園　開園時間:常時開園<br/>　休憩スペース、トイレあり　敷地内にプールがあり、日によりイベントが開催される　周辺にコンビニ、商店街あり　住所:大阪府大阪市北区扇町１丁目１?２１ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bf0a2616d6f42b4b0830d04e428a152 = L.marker(
+                [34.698554, 135.507891],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_6bf0a2616d6f42b4b0830d04e428a152.bindTooltip(
+                `<div>
+                     西天満公園　開園時間：常時開園<br/>　ベンチ、水道、自動販売機あり　周辺にコンビニもある　住所:大阪府大阪市北区西天満５丁目６?５ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b098f2ec76ad499f9138d127a905e1d4 = L.marker(
+                [34.687495, 135.49770900000001],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_b098f2ec76ad499f9138d127a905e1d4.bindTooltip(
+                `<div>
+                     京町堀公園　開園時間:常時開園<br/>　休憩スペース、トイレあり　周辺にコンビニもある　住所:大阪府大阪市西区京町堀１丁目２ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_61d33229c68d431aba553d3b05b6bd61 = L.marker(
+                [34.679814, 135.49771],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_61d33229c68d431aba553d3b05b6bd61.bindTooltip(
+                `<div>
+                     西横堀公園　開園時間：常時開園<br/>　休憩スペースあり　すこし歩いたところにコンビニあり　住所:大阪府大阪市西区 阪神 高速 1 号 環状 線 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c603cd352d5a4be189d30f655b19df24 = L.marker(
+                [34.691346, 135.503375],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_c603cd352d5a4be189d30f655b19df24.bindTooltip(
+                `<div>
+                     適塾史跡公園　開園時間：常時開園<br/>　細長い広場となっている　住所:大阪府大阪市中央区北浜３丁目３ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7906cfa87ba14b939d69c44c3b5a4b39 = L.marker(
+                [34.686687, 135.52598999999998],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_7906cfa87ba14b939d69c44c3b5a4b39.bindTooltip(
+                `<div>
+                     大阪城公園　開園時間:常時開園<br/>　公園内に屋台や売店あり　ベンチや休憩スペースあり　住所:大阪府大阪市中央区大阪城１ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_932f2684e88a4b52bf0e548e2595871d = L.marker(
+                [34.672226, 135.494744],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_932f2684e88a4b52bf0e548e2595871d.bindTooltip(
+                `<div>
+                     堀江公園　開園時間:午後10時まで<br/>　面積:5 262㎡　休憩スペースあり　住所:大阪府大阪市西区南堀江１丁目１３ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1401f775197b4efdab36fb0d87e02d6a = L.marker(
+                [34.682732, 135.51033700000002],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_1401f775197b4efdab36fb0d87e02d6a.bindTooltip(
+                `<div>
+                     東横堀公園　開園時間：常時開園<br/>　休憩スペースあり　住所:大阪府大阪市中央区本町橋５ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_140ee15327fb436ea0385567f41393c3 = L.marker(
+                [34.683673, 135.510118],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_140ee15327fb436ea0385567f41393c3.bindTooltip(
+                `<div>
+                     本町橋船着場公園　開園時間:常時開園<br/>　休憩スペースあり　目の前がかわなので夏場は涼しい　住所:大阪府大阪市中央区本町橋４ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78041500f998494b97885a22e4498865 = L.marker(
+                [34.68521, 135.513734],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_78041500f998494b97885a22e4498865.bindTooltip(
+                `<div>
+                     中大江公園　開園時間:常時開園<br/>　ベンチ多数あり　周辺に飲食店あり　コンビニは少し歩いたところにある　住所:大阪府大阪市中央区糸屋町２丁目２ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff999fedf77844b3bf29c6f89134af3a = L.marker(
+                [34.695188, 135.499686],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_ff999fedf77844b3bf29c6f89134af3a.bindTooltip(
+                `<div>
+                     堂島公園　開園時間:常時開園<br/>　休憩スペースあり　周辺にコンビニあり　目の前が川になっており夏場は涼しい　住所:大阪府大阪市北区堂島浜１丁目２ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8af32b25c31d4b91b6cc96468585b2ec = L.marker(
+                [34.694122, 135.514613],
+                {}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            marker_8af32b25c31d4b91b6cc96468585b2ec.bindTooltip(
+                `<div>
+                     滝川公園　営業時間:常時開園<br/>　ベンチ多数あり　トイレ1か所あり　周辺にコンビニ、弁当屋さんあり　住所:大阪府大阪市北区天満４丁目７ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_9884c3457aac41b7915b3298084a374b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            var tile_layer_06d490a5d3ae4a1ab2993c14e5387457 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            var tile_layer_1a9683a553c74d3eb65858a78e9fef24 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+        
+    
+            var layer_control_2677e2d30a3544b8a5ce67d06fc88118 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9884c3457aac41b7915b3298084a374b,
+                    "stamenterrain" : tile_layer_06d490a5d3ae4a1ab2993c14e5387457,
+                    "stamentoner" : tile_layer_1a9683a553c74d3eb65858a78e9fef24,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_2677e2d30a3544b8a5ce67d06fc88118.base_layers,
+                layer_control_2677e2d30a3544b8a5ce67d06fc88118.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_7669a32091444784b87c92b9e8432709);
+            tile_layer_06d490a5d3ae4a1ab2993c14e5387457.remove();
+            tile_layer_1a9683a553c74d3eb65858a78e9fef24.remove();
+        
+</script>

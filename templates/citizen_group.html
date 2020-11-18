@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_144664abeaa34740ba55cdf106d2cdf6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_144664abeaa34740ba55cdf106d2cdf6" ></div>
+        
+</body>
+<script>    
+    
+            var map_144664abeaa34740ba55cdf106d2cdf6 = L.map(
+                "map_144664abeaa34740ba55cdf106d2cdf6",
+                {
+                    center: [34.687288 ,135.506800],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_186b853af85c4dcba02dd627c4cd169b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            var marker_19c65b7ea1bd41d1a9717312ec2d5fa6 = L.marker(
+                [34.686188, 135.517677],
+                {}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            marker_19c65b7ea1bd41d1a9717312ec2d5fa6.bindTooltip(
+                `<div>
+                     大阪ボランティア協会　事業内容:「市民活動を広め深めていきたい」と願い、ボランティアグループやNPO、企業の市民活動などを支援している。<br/>住所:大阪市中央区谷町2丁目2-20 2F 市民活動スクエア「CANVAS谷町」 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_faa6e330a8204c429cfea48dba0e5dba = L.marker(
+                [34.680178000000005, 135.505768],
+                {}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            marker_faa6e330a8204c429cfea48dba0e5dba.bindTooltip(
+                `<div>
+                     FC大阪　事業内容:サッカーを通じて社会課題に取り組むチーム<br/>住所:大阪市中央区北久宝寺町2-1-10　SD船場ビル9F 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5efc79f3a65b4d6eb466ad5147c77905 = L.marker(
+                [34.690364, 135.518909],
+                {}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            marker_5efc79f3a65b4d6eb466ad5147c77905.bindTooltip(
+                `<div>
+                     近畿建設協会　事業内容:建設事業の推進を図りもって国土開発の発展に寄付し、SDGsに取り組む団体 <br/>住所:(本部)大阪府大阪市中央区大手前1-7-31 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76ae7ae610be494f982ab86b93b6755a = L.marker(
+                [34.687288, 135.5068],
+                {}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            marker_76ae7ae610be494f982ab86b93b6755a.bindTooltip(
+                `<div>
+                     大阪NPOセンター　事業内容:社会に活力を与え続けるNPOを育てる<br/>　住所:大阪市中央区平野町1-7-1　堺筋髙橋ビル５階（旧大阪勧業ビル） 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c9a043a1584496896e1510687487f3c = L.marker(
+                [34.681994, 135.50039099999998],
+                {}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            marker_7c9a043a1584496896e1510687487f3c.bindTooltip(
+                `<div>
+                     一般財団法人　大阪教育文化振興財団　事業内容:ひとづくり・まちづくりの企画・管理・運営等さまざまなノウハウと経験をもって運営している<br/>　住所:大阪市中央区船場中央4-1-10-203 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39a3cb1846264165a378b83a75a284f7 = L.marker(
+                [34.676927, 135.50666999999999],
+                {}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            marker_39a3cb1846264165a378b83a75a284f7.bindTooltip(
+                `<div>
+                     一般財団法人環境事業協会　事業内容:幅広い環境問題への取り組みを含めSDGsに即した取り組みに対応し住民サービスの向上と快適な都市環境の維持発展に寄与している。<br/>　住所:大阪市中央区南船場1丁目16番13号堺筋ベストビル9階 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0eb94ca6d7dc4a368ee0d436da2e3ff7 = L.marker(
+                [34.680306, 135.497243],
+                {}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            marker_0eb94ca6d7dc4a368ee0d436da2e3ff7.bindTooltip(
+                `<div>
+                     特定非営利活動法人　資源リサイクルシステムセンター　事業内容:環境関連技術や、産業・市場のグリーン化への取り組みなど<br/>　住所:大阪市西区立売堀一丁目2-12　本町平成ビル4階402号室 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_548f1d798b0e425a8cf26c29786adeb4 = L.marker(
+                [34.698655, 135.515197],
+                {}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            marker_548f1d798b0e425a8cf26c29786adeb4.bindTooltip(
+                `<div>
+                     特定非営利活動法人　ITC近畿会・事業委員会　事業内容:企業・団体等の経営における情報化に関する普及、啓発事業・研究開発事業など<br/>　住所:大阪市北区松ケ枝町６－１７ 第７新興ビル３F(310号) 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31f011fbb5cf4d41946367912ef2067c = L.marker(
+                [34.686487, 135.496395],
+                {}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            marker_31f011fbb5cf4d41946367912ef2067c.bindTooltip(
+                `<div>
+                     一般財団法人大阪科学技術センター　事業内容:普及広報事業・技術振興事業など<br/>　住所:大阪市西区靱本町１－８－４ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b9c656ec0b14e4bac9ce63b77c3db2b = L.marker(
+                [34.638411, 135.410723],
+                {}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            marker_3b9c656ec0b14e4bac9ce63b77c3db2b.bindTooltip(
+                `<div>
+                     一般財団法人　大阪デザインセンター　関西における産業デザインの中心拠点として、“デザイン”を軸とした人と企業と情報を結びながら活動を続けている<br/>　住所:大阪市住之江区南港北2-1-10 ATCビル ITM棟10階 A-1 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0efcb66e87c440eaddd6fbf32278a44 = L.marker(
+                [34.706148, 135.49991799999998],
+                {}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            marker_f0efcb66e87c440eaddd6fbf32278a44.bindTooltip(
+                `<div>
+                     特定非営利活動法人 関西NGO協議会　事業内容:NGOを支援し、政策提言などを行っている。<br/>　住所:大阪市北区茶屋町2-30 大阪聖パウロ教会4階 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49de4cd991ee4b2bb3e5f1a946a52533 = L.marker(
+                [34.683383, 135.498641],
+                {}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            marker_49de4cd991ee4b2bb3e5f1a946a52533.bindTooltip(
+                `<div>
+                     特定非営利活動法人　国際社会貢献センター　関西デスク　事業内容:商社など貿易に関する企業・団体を会員とする社団法人日本貿易会が、民間レベルでの支援・交流活動を通じ国内外での社会貢献に寄与することを目的に設立したNPO法人。<br/>　住所:大阪市中央区本町4-4-24　住友生命本町第2ビル9階 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_923485152b404e3c835baeddc1a29bef = L.marker(
+                [34.698854, 135.498048],
+                {}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            marker_923485152b404e3c835baeddc1a29bef.bindTooltip(
+                `<div>
+                     特定非営利活動法人　大学コンソーシアム大阪　事業内容:大阪府内およびその周辺の大学の相互連携を深めるとともに、地域社会・産業界・行政と協力しあって、地域社会に貢献し、お互いの連携を強めること、国際交流を進めることを目的としています。　<br/>住所:大阪市北区梅田1-2-2-400大阪駅前第2ビル4階 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36549d79a65b49198bcafb4d87d7239e = L.marker(
+                [34.698349, 135.50428300000002],
+                {}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            marker_36549d79a65b49198bcafb4d87d7239e.bindTooltip(
+                `<div>
+                     一般社団法人 電子情報技術産業協会 関西支部　事業内容:環境・エネルギー、調達、人事・労務、製品安全、CSR・コンプライアンス等、会員企業共通の課題について最新の情報を発信・共有すると共に、将来のIT・エレクトロニクス産業を担う人材の育成に取り組む。　<br/>住所:大阪府大阪市北区西天満6-8-7　DKビル 7階 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68ccd99a04f646eea4b63f46d6aaa2db = L.marker(
+                [34.698368, 135.504326],
+                {}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            marker_68ccd99a04f646eea4b63f46d6aaa2db.bindTooltip(
+                `<div>
+                     一般社団法人　日本機械工業連合会　大阪事務所　事業内容:経済の発展に寄与することを目的に、①機械工業の振興に関する対策の樹立および実現推進、②国会、政府等に対する意見の具申その他機械工業総意の表明、③機械工業に関する行政施策に対する協力、④関係団体との連絡協調、⑤機械工業に関する調査及び研究など　<br/>住所:大阪市北区西天満４－１１－２２　阪神神明ビル６階６０２号室1 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_16c749d6574d43b8953b0f523d1d3e00 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            var tile_layer_90c621c3c0124809b3406a0543e72414 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            var tile_layer_c8680cef5c8c4b22b0bc140e2869281a = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+        
+    
+            var layer_control_77db5aeaf0d44ba3a3b750f92d14d982 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_16c749d6574d43b8953b0f523d1d3e00,
+                    "stamenterrain" : tile_layer_90c621c3c0124809b3406a0543e72414,
+                    "stamentoner" : tile_layer_c8680cef5c8c4b22b0bc140e2869281a,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_77db5aeaf0d44ba3a3b750f92d14d982.base_layers,
+                layer_control_77db5aeaf0d44ba3a3b750f92d14d982.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_144664abeaa34740ba55cdf106d2cdf6);
+            tile_layer_90c621c3c0124809b3406a0543e72414.remove();
+            tile_layer_c8680cef5c8c4b22b0bc140e2869281a.remove();
+        
+</script>

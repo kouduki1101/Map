@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+    <script>
+        L_NO_TOUCH = false;
+        L_DISABLE_3D = false;
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet"
+          href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }</style>
+    <style>#map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }</style>
+
+    <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <style>
+        #map_6df97e6aec2a4d069c91107929ea4d4a {
+            position: relative;
+            width: 100.0%;
+            height: 100.0%;
+            left: 0.0%;
+            top: 0.0%;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="folium-map" id="map_6df97e6aec2a4d069c91107929ea4d4a"></div>
+
+</body>
+<script>
+
+    var map_6df97e6aec2a4d069c91107929ea4d4a = L.map(
+        "map_6df97e6aec2a4d069c91107929ea4d4a",
+        {
+            center: [34.6594, 135.4996],
+            crs: L.CRS.EPSG3857,
+            zoom: 16,
+            zoomControl: true,
+            preferCanvas: false,
+        }
+    );
+
+
+    var tile_layer_a0b238ea0be844b686b75662cc8b61a9 = L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {
+            "attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.",
+            "detectRetina": false,
+            "maxNativeZoom": 18,
+            "maxZoom": 18,
+            "minZoom": 0,
+            "noWrap": false,
+            "opacity": 1,
+            "subdomains": "abc",
+            "tms": false
+        }
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    var marker_64b1e429f21c40428548c98a6dd9783d = L.marker(
+        [34.671569, 135.50795],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_64b1e429f21c40428548c98a6dd9783d.bindTooltip(
+        `<div>
+                     中央スポーツセンター　施設利用:第1体育場(バスケットボール・バレーボール・卓球など)・第2体育場（柔剣道場）(柔道・剣道など)<br/> 住所:大阪府大阪市中央区島之内２丁目１２?３１ 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_41dedda328164d5da7a0aca1425fa502 = L.marker(
+        [34.642043, 135.51082],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_41dedda328164d5da7a0aca1425fa502.bindTooltip(
+        `<div>
+                     阿倍野スポーツセンター　施設利用:第1体育場(バスケットボール・テニス・卓球など)・第2体育場(柔剣道場)・多目的室1~3(ジャズダンス)・スポーツ教室<br/>　住所:大阪府大阪市阿倍野区阿倍野筋３丁目１０?１ 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_4c4f4cf3468b469594a4ab0cb7a7529e = L.marker(
+        [34.649438, 135.472612],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_4c4f4cf3468b469594a4ab0cb7a7529e.bindTooltip(
+        `<div>
+                     大阪市立千島体育館　施設利用:体育場(バスケットボールやサッカーなどの球技)・柔道場・剣道場・トレーニング場（多目的室）(ヨガなど)・スポーツ教室有<br/>　住所:大阪府大阪市大正区千島２丁目７?９３ 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_cae3596a396840cd8c8c7fc624305d15 = L.marker(
+        [34.670775, 135.528424],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_cae3596a396840cd8c8c7fc624305d15.bindTooltip(
+        `<div>
+                     天王寺スポーツセンター　施設利用:第1体育場・第2体育場(バレーボールやテニスなどの球技)・多目的室(ヨガ・ジャズダンス・バレエなど)<br/>　住所:大阪府大阪市天王寺区真田山町５?１０９ 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_09850824c19c415d837d627d747f4bcc = L.marker(
+        [34.708121000000006, 135.522777],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_09850824c19c415d837d627d747f4bcc.bindTooltip(
+        `<div>
+                     都島スポーツセンター　施設利用:第1体育場(バレーボール、バスケットボールなどの球技)・第2体育場(卓球・柔道・剣道など)・多目的室(エアロビクスなど)<br/>　住所:大阪府大阪市都島区中野町５丁目１５?２１ 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_3d4908562ab849a9adf2d6ea411587c4 = L.marker(
+        [34.710373, 135.492619],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_3d4908562ab849a9adf2d6ea411587c4.bindTooltip(
+        `<div>
+                     北スポーツセンター　施設利用:第1体育場(バレーボールや卓球、テニスなどの球技)・第2体育場(柔道・剣道)・多目的室(エアロビクスなど)<br/>　住所:大阪府大阪市北区中津３丁目４?２７ 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_48c37570dcaa4187a8d6b02778104bf3 = L.marker(
+        [34.691534000000004, 135.473107],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_48c37570dcaa4187a8d6b02778104bf3.bindTooltip(
+        `<div>
+                     福島スポーツセンター　施設利用:体育場(卓球やバレーボール、バスケットボールなどの球技)　<br/>住所:大阪府大阪市福島区吉野３丁目１７?２３ 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_2058ac6ddca64e98a224855c59e63bac = L.marker(
+        [34.661489, 135.499357],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_2058ac6ddca64e98a224855c59e63bac.bindTooltip(
+        `<div>
+                     大阪市立浪速スポーツセンター　施設利用:プール・トレーニングジム・第1体育館(フットサルなど)・スケートリンク<br/>　住所:大阪府大阪市浪速区難波中３丁目８?８ 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_589ffcd6a295425bbcb9efb60b230144 = L.marker(
+        [34.73466, 135.49405],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_589ffcd6a295425bbcb9efb60b230144.bindTooltip(
+        `<div>
+                     淀川スポーツセンター　施設利用:第1体育場(バレーボールやバスケットボールなどの球技)・第2体育場(剣道・柔道・ライトバレーなど)・多目的室(エアロビクスなど)・スポーツ教室有<br/>　住所:大阪府大阪市淀川区西宮原２丁目１?３ ソーラ新大阪２１ ３～５階 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_3e3c9e704e9f4271b182fe0e7fb67b69 = L.marker(
+        [34.647226, 135.472221],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_3e3c9e704e9f4271b182fe0e7fb67b69.bindTooltip(
+        `<div>
+                     大正スポーツセンター　施設利用:第1体育場(バレーボールやバスケットボールなどの球技)・第2体育場(なぎなた・柔道など)・多目的室(エアロビクスなど)<br/>　住所:大阪府大阪市大正区小林東３丁目３?２５ 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_dfcfb7516b3442b9b36cf59ae9456157 = L.marker(
+        [34.734359999999995, 135.519677],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_dfcfb7516b3442b9b36cf59ae9456157.bindTooltip(
+        `<div>
+                     大阪市立東淀川スポーツセンター　施設利用:第1体育場(バレーボールやバスケットボールなどの球技)・第2体育場(剣道・柔道など)・多目的室(エアロビクスなど)<br/>　住所:大阪府大阪市東淀川区東淡路１丁目４?２１ 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_2f687eaf18674698a30951b37f74bf72 = L.marker(
+        [34.681455, 135.463124],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_2f687eaf18674698a30951b37f74bf72.bindTooltip(
+        `<div>
+                     此花スポーツセンター　施設利用:第1体育場(バレーボールやバスケットボールなどの球技)・第2体育場(剣道・柔道など)・多目的室(エアロビクスなど)<br/>　住所:大阪府大阪市此花区西九条６丁目１?２７ 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_5c832053766b4481bd4d9223e88ced49 = L.marker(
+        [34.678872999999996, 135.548177],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_5c832053766b4481bd4d9223e88ced49.bindTooltip(
+        `<div>
+                     東成スポーツセンター　施設利用:アリーナ(高齢者向けの体操教室・太極拳・ヨガやダンスなど)・プール・マシンジム<br/>　住所:大阪府大阪市東成区東中本２丁目１１?３０ 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_8dd2ef01edef42eaa1f6bcac670ad256 = L.marker(
+        [34.691584000000006, 135.536284],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_8dd2ef01edef42eaa1f6bcac670ad256.bindTooltip(
+        `<div>
+                     城東スポーツセンター　施設利用:第1体育場(バレーボールやバスケットボールなどの球技)・第2体育場(剣道・柔道など)・多目的室(エアロビクスなど)<br/>　住所:大阪府大阪市城東区鴫野西２丁目１?２１ 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_50278e45e40840f596932a6a292f68a3 = L.marker(
+        [34.66192, 135.445743],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_50278e45e40840f596932a6a292f68a3.bindTooltip(
+        `<div>
+                     大阪市立港スポーツセンター　施設利用:第1体育場(バレーボールやバスケットボールなどの球技)・第2体育場(剣道・柔道など)・多目的室(エアロビクスなど)・子ども向け教室<br/>　住所:大阪府大阪市港区田中３丁目１?１２８ 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_e912a5d740b24b5e9450720e9206eac5 = L.marker(
+        [34.716919, 135.540807],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_e912a5d740b24b5e9450720e9206eac5.bindTooltip(
+        `<div>
+                     旭スポーツセンター　施設利用:第1体育場(バレーボールやバスケットボールなどの球技)・第2体育場(剣道・柔道など)・多目的室(エアロビクスなど)<br/>　住所:大阪府大阪市旭区高殿５丁目３?２５ 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_1bb33debb1584311bde5f15a83c66b1c = L.marker(
+        [34.623725, 135.47551],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_1bb33debb1584311bde5f15a83c66b1c.bindTooltip(
+        `<div>
+                     住之江スポーツセンター　施設利用:第1体育場(バレーボールやバスケットボールなどの球技)・第2体育場(剣道・柔道)<br/>　住所:大阪府大阪市住之江区北加賀屋５丁目３?４７ 住之江総合会館4階 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_dfca21d438874492b6b6f027a03b9e52 = L.marker(
+        [34.709802, 135.45983999999999],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_dfca21d438874492b6b6f027a03b9e52.bindTooltip(
+        `<div>
+                     西淀川スポーツセンター　施設利用:体育場(バスケットボール・バレーボール・バドミントンなど)<br/>　住所:大阪府大阪市西淀川区野里２丁目１０-３５ 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_65f0f9e84cc4474594dad1352e030118 = L.marker(
+        [34.598832, 135.526243],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_65f0f9e84cc4474594dad1352e030118.bindTooltip(
+        `<div>
+                     東住吉スポーツセンター　施設利用:第1体育場(バレーボールやバスケットボールなどの球技)・第2体育場(剣道・柔道など)・多目的室(エアロビクスなど)<br/>　住所:大阪府大阪市東住吉区公園南矢田４丁目３０?３ 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var marker_261e86298766483ba88639c4edff1b9f = L.marker(
+        [34.612431, 135.514678],
+        {}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    marker_261e86298766483ba88639c4edff1b9f.bindTooltip(
+        `<div>
+                     大阪市長居障害者スポーツセンター　施設利用:体育室・室内温水プール・屋外プール・トレーニング室・卓球上・ボウリング場・野外運動場など<br/>　住所:大阪府大阪市東住吉区長居公園１?３２ 
+                 </div>`,
+        {"sticky": true}
+    );
+
+
+    var tile_layer_c0b47c04d6b8479c964b687b5be9eff1 = L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {
+            "attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.",
+            "detectRetina": false,
+            "maxNativeZoom": 18,
+            "maxZoom": 18,
+            "minZoom": 0,
+            "noWrap": false,
+            "opacity": 1,
+            "subdomains": "abc",
+            "tms": false
+        }
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    var tile_layer_622f2a4bf45c4e29b58d949feea134e8 = L.tileLayer(
+        "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+        {
+            "attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.",
+            "detectRetina": false,
+            "maxNativeZoom": 18,
+            "maxZoom": 18,
+            "minZoom": 0,
+            "noWrap": false,
+            "opacity": 1,
+            "subdomains": "abc",
+            "tms": false
+        }
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    var tile_layer_954c1dc42a6542a69be490302128cbba = L.tileLayer(
+        "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+        {
+            "attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.",
+            "detectRetina": false,
+            "maxNativeZoom": 18,
+            "maxZoom": 18,
+            "minZoom": 0,
+            "noWrap": false,
+            "opacity": 1,
+            "subdomains": "abc",
+            "tms": false
+        }
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+
+
+    var layer_control_3f75560fc39946899920cb5fecce1001 = {
+        base_layers: {
+            "openstreetmap": tile_layer_c0b47c04d6b8479c964b687b5be9eff1,
+            "stamenterrain": tile_layer_622f2a4bf45c4e29b58d949feea134e8,
+            "stamentoner": tile_layer_954c1dc42a6542a69be490302128cbba,
+        },
+        overlays: {},
+    };
+    L.control.layers(
+        layer_control_3f75560fc39946899920cb5fecce1001.base_layers,
+        layer_control_3f75560fc39946899920cb5fecce1001.overlays,
+        {"autoZIndex": true, "collapsed": true, "position": "topright"}
+    ).addTo(map_6df97e6aec2a4d069c91107929ea4d4a);
+    tile_layer_622f2a4bf45c4e29b58d949feea134e8.remove();
+    tile_layer_954c1dc42a6542a69be490302128cbba.remove();
+
+</script>

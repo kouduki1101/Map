@@ -2,22 +2,64 @@
 {% load bootstrap4 %}
 {% block content %}
 
-    <div class='container'>
-        <form class="form-signin" method='post'>{% csrf_token %}
-            {#            <img class="mb-4" src="../static/svg/map.svg" alt="" width="72" height="72">　上手く表示されない#}
-            <h1 class="h3 mb-3 font-weight-normal">Please login</h1>
-            {% if error %}
-                {{ error }}
-            {% endif %}
-            <label for="inputEmail" class="sr-only">Username</label>
-            <input type="text" id="inputEmail" class="form-control" placeholder="username" name="username_data" required
-                   autofocus>
-            <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password_data"
-                   required>
 
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
-        </form>
+    <div class="container-fluid">
+
+
+        <div class="row">
+
+
+            <div class="col-md-12 news">
+
+                ログインしてください
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row">
+
+
+            <div class="col-md-12 gap">
+
+
+                <form class="form-signin" method='post'>{% csrf_token %}
+                    <img class="mb-4" src="../static/png/map.png" alt="" width="72" height="72">
+                    <h1 class="h3 mb-3 font-weight-normal">Please login</h1>
+                    <label for="inputEmail" class="sr-only">Username</label>
+                    <input type="text" id="inputEmail" class="form-control" placeholder="username" name="username_data"
+                           required
+                           autofocus>
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+                           name="password_data"
+                           required>
+
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">login</button>
+                    <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+                </form>
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12 gap">
+                {##}ギャップ
+
+            </div>
+
+        </div>
+
     </div>
+
+
+
 {% endblock content %}
