@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5cea712c425e4ae7b095f804f2da95f0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5cea712c425e4ae7b095f804f2da95f0" ></div>
+        
+</body>
+<script>    
+    
+            var map_5cea712c425e4ae7b095f804f2da95f0 = L.map(
+                "map_5cea712c425e4ae7b095f804f2da95f0",
+                {
+                    center: [34.6594, 135.4996],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4e3904e5c3144480bc81daf313ed9e16 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            var marker_b2059d7e276b4536aadd350494a65aac = L.marker(
+                [34.69988, 135.495876],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_b2059d7e276b4536aadd350494a65aac.bindTooltip(
+                `<div>
+                     ヒルトン大阪川梅       営業時間: ランチ 11:30?14:30  ディナー17:30?21:30 ヒルトン大阪<br/>〒530-0001 大阪市北区梅田1-8-8 JR「大阪駅」より徒歩2分 TEL: 06-6347-7111
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32237193cec04dfaa83260cba6a27dfa = L.marker(
+                [34.730024, 135.50116],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_32237193cec04dfaa83260cba6a27dfa.bindTooltip(
+                `<div>
+                     コンフォートホテル新大阪       営業時間: 24時間対応 <br/>〒532-0011 大阪府大阪市淀川区西中島５丁目３?7 JR「新大阪」駅正面口より徒歩約5分。TEL: 06-6305-1911
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a701efd7a9c43498b057e7ec7c8c3bb = L.marker(
+                [34.664158, 135.501142],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_3a701efd7a9c43498b057e7ec7c8c3bb.bindTooltip(
+                `<div>
+                     スイスホテル南海大阪       <br/>〒542-0076 大阪府大阪市中央区難波５丁目１?60 サイト: https://www.swissotel.com 大阪難波駅徒歩約5分 TEL: 06-6646-1111
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d37e6dad3f840f6940cd72ad7e1f832 = L.marker(
+                [34.670445, 135.47791999999998],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_7d37e6dad3f840f6940cd72ad7e1f832.bindTooltip(
+                `<div>
+                     イオン大阪ドームシティ店       営業時間: 08:00~23:00 <br/>〒550-0023 大阪府大阪市西区千代崎３丁目北２ １３番１号  ドーム前千代崎駅1分  TEL: 06-6584-1500
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f059d52f04bd47b2b7800bc593ac57a9 = L.marker(
+                [34.704369, 135.566691],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_f059d52f04bd47b2b7800bc593ac57a9.bindTooltip(
+                `<div>
+                     イオンモール鶴見緑地       営業時間: 08:00~23:00 <br/>〒538-0053 大阪府大阪市鶴見区鶴見４丁目１７?1  今福鶴見約8分 TEL: 06-4257-3322
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b7384e92f1e4b86ab3e69619ff9a256 = L.marker(
+                [34.608318, 135.551736],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_1b7384e92f1e4b86ab3e69619ff9a256.bindTooltip(
+                `<div>
+                     イオン喜連瓜破駅前店       営業時間: 08:00~23:00 <br/>〒547-0024 大阪府大阪市平野区瓜破2-1-13  喜連瓜破約2分 TEL: 06-6760-1777
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dbd001335bfe482784a1b0faf1337b01 = L.marker(
+                [34.691664, 135.459498],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_dbd001335bfe482784a1b0faf1337b01.bindTooltip(
+                `<div>
+                     イオン高見店       営業時間: 08:00~23:00 <br/>〒554-0001 大阪府大阪市此花区高見１丁目５ 淀川約11分 TEL: 06-6462-3308
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4981ee6a20644c3abddae4ba882df4a3 = L.marker(
+                [34.608332, 135.566181],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_4981ee6a20644c3abddae4ba882df4a3.bindTooltip(
+                `<div>
+                     イオン長吉店       営業時間: 08:00~22:00 <br/>〒547-0015 大阪府大阪市平野区長吉長原西１丁目１?10  出戸約1分  TEL: 06-6709-4741
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f53a9610b3d84d18a36962ef2f4339da = L.marker(
+                [34.695388, 135.47580200000002],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_f53a9610b3d84d18a36962ef2f4339da.bindTooltip(
+                `<div>
+                     イオン野田阪神店       営業時間: 08:00~22:00 <br/>〒553-0001 大阪府大阪市福島区海老江１丁目１?23  野田阪神約2分 TEL: 06-6457-6300
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03375021fb5344b9b033c0d3bdd794a2 = L.marker(
+                [34.689437, 135.506375],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_03375021fb5344b9b033c0d3bdd794a2.bindTooltip(
+                `<div>
+                     ダイワロイネットホテル 大阪北浜       <br/>〒541-0043 大阪府大阪市中央区高麗橋2-2-14 地下鉄御堂筋線「淀屋橋駅」8番出口より徒歩8分・地下鉄 TEL: 06-6228-1255 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8867ca69a5634b498712bd6105672a71 = L.marker(
+                [34.677819, 135.496026],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_8867ca69a5634b498712bd6105672a71.bindTooltip(
+                `<div>
+                     ダイワロイネットホテル 四ツ橋       <br/>〒550-0013 大阪府大阪市西区新町１丁目１０?12  地下鉄四つ橋線四ツ橋駅2番出口より徒歩3分 TEL: 06-6534-8055
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8da2b91a45b04ddc98221aef654e644d = L.marker(
+                [34.702935, 135.495554],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_8da2b91a45b04ddc98221aef654e644d.bindTooltip(
+                `<div>
+                     LUCUA Osaka       営業時間: 10:30~20:30 <br/>〒530-0001 大阪府大阪市北区梅田３丁目１?3 梅田駅（御堂筋線）北改札口から徒歩約2分 TEL: 06-6151-1111
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09de6cac1d7f4eaaad018c3852baebb4 = L.marker(
+                [34.702603, 135.496523],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_09de6cac1d7f4eaaad018c3852baebb4.bindTooltip(
+                `<div>
+                     エスタシオンカフェグラン       営業時間: 07:30~10:30 <br/>〒530-0001 大阪府大阪市北区梅田３丁目１?1  TEL: 06-6341-0222
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa89a450c4fb4ff5bde11636ae9d4156 = L.marker(
+                [34.661607000000004, 135.50194199999999],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_aa89a450c4fb4ff5bde11636ae9d4156.bindTooltip(
+                `<div>
+                     Namba Parks        営業時間: 11:00~21:00 <br/>〒556-0011 大阪府大阪市浪速区難波中２丁目１０?70  地下鉄御堂筋線 「なんば駅」TEL: 06-6644-7100
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36e2adb913c54e52918ed2ee5ac31eaa = L.marker(
+                [34.696245000000005, 135.497559],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_36e2adb913c54e52918ed2ee5ac31eaa.bindTooltip(
+                `<div>
+                     北新地うのあん       営業時間: 11:00~14:00 18:00~23:00 <br/>〒530-0003 大阪府大阪市北区堂島１丁目４?20 第２ロイヤルビル B1 地下鉄四つ橋線西梅田駅から徒歩3分 TEL:06-6346-2466
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29553daf39ac4a82add40e84664fcf84 = L.marker(
+                [34.706068, 135.494097],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_29553daf39ac4a82add40e84664fcf84.bindTooltip(
+                `<div>
+                     カフェ＆ミール ムジ グランフロント大阪       営業時間: 11:00~21:00 <br/>〒530-0011 大阪府大阪市北区大深町３?1 グランフロント大阪北館 4F ＪＲ大阪駅直通・阪急線・阪神線・地下鉄御堂筋線梅田駅下車すぐ TEL: 06-6359-2173 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f399896fcd454c8782ee2b4caa25dea8 = L.marker(
+                [34.685123, 135.495715],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_f399896fcd454c8782ee2b4caa25dea8.bindTooltip(
+                `<div>
+                     カンテ・グランデ 靭公園店       営業時間: 09:00~21:00 <br/>〒550-0004 大阪府大阪市西区靱本町１丁目９?23 大阪市営地下鉄　四ツ橋線　本町駅　28番出口から徒歩3分 TEL: 06-6445-3955
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be53fa4f35704598b24271226075c8a3 = L.marker(
+                [34.665062, 135.55864],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_be53fa4f35704598b24271226075c8a3.bindTooltip(
+                `<div>
+                     カフェあじろの樹       営業時間: 10:00~16:00 <br/>〒577-0057 東大阪市足代新町13-10 Osaka Metro 千日前線「新深江駅」より徒歩7分 TEL: 06-6785-0306
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4da5120874a145a796a977b2a5fccbdf = L.marker(
+                [34.532957, 135.49804699999999],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_4da5120874a145a796a977b2a5fccbdf.bindTooltip(
+                `<div>
+                     パティスリー ド タブロオ       営業時間: 09:00~21:00 <br/>〒599-8237 大阪府堺市中区深井水池町３１４７ TEL: 072-270-5992
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24b95b58c3e947978b981f964022e7b0 = L.marker(
+                [34.741981, 135.49886899999998],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_24b95b58c3e947978b981f964022e7b0.bindTooltip(
+                `<div>
+                     ローソン 淀川東三国二丁目店       営業時間: 24時間 <br/>〒532-0002 大阪府大阪市淀川区東三国２丁目３８?７東三国駅1番出口 TEL:06-6396-8622
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04547305556c4a778d58f0b764f3393e = L.marker(
+                [34.464126, 135.425532],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_04547305556c4a778d58f0b764f3393e.bindTooltip(
+                `<div>
+                     ボンヴィラージュ・オゼ       営業時間: 11:30~14:00 17:30~21:00 <br/>〒596-0805 大阪府岸和田市田治米町１４０?１JR阪和線「久米田」駅より徒歩25分 TEL: 072-441-1641
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8c2d7ac2be543a494c49e1e53f00d86 = L.marker(
+                [34.534965, 135.494303],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_f8c2d7ac2be543a494c49e1e53f00d86.bindTooltip(
+                `<div>
+                     よつば珈琲       営業時間: 09:00~18:00 <br/>〒599-8272 大阪府堺市中区深井中町３２８３泉北高速線「深井」駅より徒歩7分 TEL: 072-270-4280
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3aa7d5553c564414a4cb289c44cf8a27 = L.marker(
+                [34.703808, 135.497777],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_3aa7d5553c564414a4cb289c44cf8a27.bindTooltip(
+                `<div>
+                     ミオール 梅田店       営業時間: 10:00~22:00 <br/>〒530-0017 大阪府大阪市北区角田町９?26 梅田駅から87m TEL: 06-6361-2205
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae01c81f5c804c35b59989c16c88b7fb = L.marker(
+                [34.676982, 135.495813],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_ae01c81f5c804c35b59989c16c88b7fb.bindTooltip(
+                `<div>
+                     シュクレクール四ツ橋出張所       営業時間: 11:30~19:00 <br/>〒550-0013 大阪府大阪市西区新町１丁目２０?2 四ツ橋駅(2番出口より徒歩3分)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d23474208b5942938e8a900195caa9c3 = L.marker(
+                [34.663218, 135.502611],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_d23474208b5942938e8a900195caa9c3.bindTooltip(
+                `<div>
+                     コメダ珈琲店 なんばCITY店       営業時間: 09:00~21:30 <br/>〒542-0076 大阪府大阪市中央区難波５丁目１?６０ TEL: 06-6644-2741
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_297ddb80acfc43649f09f690f692f4b8 = L.marker(
+                [34.683439, 135.49893400000002],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_297ddb80acfc43649f09f690f692f4b8.bindTooltip(
+                `<div>
+                     コメダ珈琲店 大阪本町店       営業時間: 07:00~23:00 <br/>〒541-0053 大阪府大阪市中央区本町４丁目４?２５ TEL: 06-6252-0100
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4759f7d8f46747f490aaba22bf541b23 = L.marker(
+                [34.361655999999996, 135.280649],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_4759f7d8f46747f490aaba22bf541b23.bindTooltip(
+                `<div>
+                     御菓子処　幸泉       営業時間: 09:00~19:00 <br/>〒590-0522 大阪府泉南市信達牧野204 「和泉砂川」駅西出口よりすぐ。TEL: 072-483-5414
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f17a10d29c3341aa946dc5265e9ed25b = L.marker(
+                [34.571075, 135.488046],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_f17a10d29c3341aa946dc5265e9ed25b.bindTooltip(
+                `<div>
+                     お菓子の国 ふ～ゆ       営業時間: 11:00~17:00 <br/>〒590-0027 大阪府堺市堺区榎元町５丁４?2 南海高野線「堺東」駅より徒歩7分 TEL: 072-205-9855
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f54829b2a384d9eb4fb44b74a840e4c = L.marker(
+                [34.673851, 135.499601],
+                {}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            marker_2f54829b2a384d9eb4fb44b74a840e4c.bindTooltip(
+                `<div>
+                     中国料理　桃李       営業時間: 11:30~14:30 17:30~21:30 <br/>〒542-0086 大阪府大阪市中央区西心斎橋１丁目３?3 TEL: 06-6244-2455
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_a2ed4556a4e2498a90433fe48a0a3464 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            var tile_layer_e5caa238e843421f97f5937219810562 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            var tile_layer_958ce9a11709468187b75af19a9ac897 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+        
+    
+            var layer_control_a538d7eb9bbf4fa9afae797602975cdc = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a2ed4556a4e2498a90433fe48a0a3464,
+                    "stamenterrain" : tile_layer_e5caa238e843421f97f5937219810562,
+                    "stamentoner" : tile_layer_958ce9a11709468187b75af19a9ac897,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_a538d7eb9bbf4fa9afae797602975cdc.base_layers,
+                layer_control_a538d7eb9bbf4fa9afae797602975cdc.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_5cea712c425e4ae7b095f804f2da95f0);
+            tile_layer_e5caa238e843421f97f5937219810562.remove();
+            tile_layer_958ce9a11709468187b75af19a9ac897.remove();
+        
+</script>
