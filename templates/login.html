@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load bootstrap4 %}
+{% load static %}
 {% block content %}
 
 
@@ -11,7 +12,9 @@
 
             <div class="col-md-12 news">
 
-                ログインしてください
+                <div class="col-md-12 title">
+                    登録ユーザーログイン
+                </div>
 
 
             </div>
@@ -27,7 +30,7 @@
 
 
                 <form class="form-signin" method='post'>{% csrf_token %}
-                    <img class="mb-4" src="../static/png/map.png" alt="" width="72" height="72">
+                    {#                    <img class="mb-4" src="../static/png/map.png" alt="" width="72" height="72">#}
                     <h1 class="h3 mb-3 font-weight-normal">Please login</h1>
                     <label for="inputEmail" class="sr-only">Username</label>
                     <input type="text" id="inputEmail" class="form-control" placeholder="username" name="username_data"
@@ -39,12 +42,20 @@
                            required>
 
                     <button class="btn btn-lg btn-primary btn-block" type="submit">login</button>
-                    <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+
                 </form>
 
+                <div class="row">
+                    <div class="col-md-6 login-left ">
+                        <a href="{% url 'Icon:signup' %}" class="btn btn--orange btn--cubic btn--shadow">新規登録画面</a>
+                    </div>
+
+
+                    <div class="col-md-6 login-right ">
+                        <a href="{% url 'Icon:home' %}" class="btn btn--orange btn--cubic btn--shadow">ホーム画面</a>
+                    </div>
+                </div>
             </div>
-
-
 
 
         </div>
@@ -57,7 +68,14 @@
             </div>
 
         </div>
+        <div class="row">
+            <div class="col-md-12 gap">
+                <div class="col-md-6 forget ">
 
+                    <a href={% url 'Icon:password_reset' %}>ユーザー名・パスワードを忘れた方はこちらから</a>
+                </div>
+            </div>
+        </div>
     </div>
 
 

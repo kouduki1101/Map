@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% load static %}
+{% block content %}
+
+
+
+
+    <body>
+
+
+
+    <div class="row">
+        <div class="col-md-12 title">
+            みんなの○○地図
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-12 resizeimage">
+            <img src="../static/jpg/home.jpg" alt="公園">
+        </div>
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-md-6 home-left ">
+            <a href="{% url 'Icon:signup' %}" class="btn btn--orange btn--cubic btn--shadow">新規登録画面</a>
+        </div>
+
+
+        <div class="col-md-6 home-right ">
+            <a href="{% url 'Icon:login' %}" class="btn btn--orange btn--cubic btn--shadow">ログイン画面</a>
+        </div>
+
+    </div>
+
+
+    </body>
+
+{% endblock content %}

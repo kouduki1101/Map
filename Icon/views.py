@@ -2,7 +2,9 @@ import os
 import tempfile
 import webbrowser
 import folium as folium
+from django.core.mail import send_mail
 from django.db import IntegrityError
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.views import View
 import requests
@@ -149,3 +151,26 @@ def loginview(request):
             return redirect('login')
 
     return render(request, 'login.html')
+
+
+def homeview(request):
+    return render(request, 'home.html')
+
+
+def forgetview(request):
+    return render(request, 'forget.html')
+
+def emailfunc(request):
+    send_mail(
+        'タイトル',
+        '',
+        '',
+        [''],
+        fail_silently=False,
+
+    )
+
+    return HttpResponse('')
+
+
+

@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% load bootstrap4 %}
+{% load static %}
 {% block content %}
+
 
     <div class="container-fluid">
 
@@ -10,7 +12,10 @@
 
             <div class="col-md-12 news">
 
-                新規登録画面
+                <div class="col-md-12 title">
+                    新規ユーザー登録
+                </div>
+
 
             </div>
 
@@ -23,12 +28,10 @@
 
             <div class="col-md-12 gap">
 
+
                 <form class="form-signin" method='post'>{% csrf_token %}
-                    {#            <img class="mb-4" src="../static/svg/map.svg" alt="" width="72" height="72">　上手く表示されない#}
-                    <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
-                    {% if error %}
-                        {{ error }}
-                    {% endif %}
+                    {#                    <img class="mb-4" src="../static/png/map.png" alt="" width="72" height="72">#}
+                    <h1 class="h3 mb-3 font-weight-normal">Please signup</h1>
                     <label for="inputEmail" class="sr-only">Username</label>
                     <input type="text" id="inputEmail" class="form-control" placeholder="username" name="username_data"
                            required
@@ -37,22 +40,47 @@
                     <input type="password" id="inputPassword" class="form-control" placeholder="Password"
                            name="password_data"
                            required>
-                    <div class="checkbox mb-3">
 
-                    </div>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
-                    <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
-
-
-                    <a href="{% url 'Icon:login' %}">Login画面はこちら</a>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">signup</button>
 
                 </form>
 
+                <div class="row">
+                    <div class="col-md-6 signup-left ">
+                        <a href="{% url 'Icon:home' %}" class="btn btn--orange btn--cubic btn--shadow">ホーム画面</a>
+                    </div>
+
+
+                    <div class="col-md-6 signup-right ">
+                        <a href="{% url 'Icon:login' %}" class="btn btn--orange btn--cubic btn--shadow">ログイン画面</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12 gap">
+                {##}ギャップ
+
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="col-md-12 gap">
+                <div class="col-md-6 forget ">
+
+                    <a href={% url 'Icon:password_reset' %}>ユーザー名・パスワードを忘れた方はこちらから</a>
+                </div>
             </div>
 
         </div>
 
     </div>
 
-    </div>
+
+
 {% endblock content %}

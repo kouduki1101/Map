@@ -12,7 +12,7 @@
             <div id="container">
                 <div>
                     <form>
-                        <input type="submit" value="" class="home_btn">
+                        <input type="button" onclick="location.href='{% url 'Icon:home' %}'" value="" class="home_btn">
                     </form>
                 </div>
 
@@ -83,6 +83,7 @@
                         width=100%
                         height=100%
 
+                        {#                        本来の動きにするにはソース部分にはtempMap[i]が表示されるように指定する必要があるがローカルでは表示不可#}
                         src="https://lisp-trpg.ddo.jp/trpg/onj/upload/upl/OpnyVGeDAFqDcYii8eYh/blood_donation.html">
                 </iframe>
 
@@ -103,8 +104,6 @@
                         <label for="address">住所</label>
                         <textarea id="address" name="address">{{ address }}</textarea>
                     </div>
-
-
 
 
                     <input type="submit" value="送信する">

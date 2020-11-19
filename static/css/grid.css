@@ -16,6 +16,7 @@
 
 .container-fluid {
 
+
     background-color: mediumpurple;
     background-image: radial-gradient(#fff 28%, transparent 33%),
     radial-gradient(#fff 28%, transparent 33%);
@@ -176,9 +177,123 @@
 
 .resizeimage img {
 
-    width: 100%;
-    max-width: 100%;
+    width: 50%;
+    max-width: 50%;
     height: auto;
+    display: block;
+    margin: auto;
+
+
 }
 
 
+.home-left {
+
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    font-size: xx-large;
+
+}
+
+.home-right {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: xx-large;
+
+
+}
+
+
+.title {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    background: rgba(167, 164, 197, 1);
+
+}
+
+
+a.btn--orange {
+    color: #fff;
+    background: rgba(155, 151, 206, 0.8);
+    border-bottom: 2px solid rgba(167, 164, 197, 1);;
+}
+
+
+a.btn--orange:hover {
+    margin-top: 3px;
+    color: rgba(167, 164, 197, 1);
+    background: #fff;
+    border-bottom: 2px solid rgba(167, 164, 197, 1);
+}
+
+a.btn--shadow {
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+
+
+.login-left {
+
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: right;
+    font-size: xx-large;
+
+}
+
+.login-right {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: left;
+    font-size: xx-large;
+
+
+}
+
+
+.signup-left {
+
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: right;
+    font-size: xx-large;
+
+}
+
+.signup-right {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: left;
+    font-size: xx-large;
+
+
+}
+
+.forget {
+
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: x-large;
+
+}
